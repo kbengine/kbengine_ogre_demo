@@ -5,6 +5,7 @@ kbengine_ogre_demo
 http://www.kbengine.org
 
 ##Releases
+
 	binarys		: https://sourceforge.net/projects/kbengine/files/
 
 
@@ -29,12 +30,34 @@ http://www.kbengine.org
 		4. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\kbengine_vs90.sln -> build.
 		
 		5. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\client\ogre\client_for_ogre_vc90.sln -> build.
-##Startup:
+
+
+##Start the servers:
 
 	Linux:
+			http://www.kbengine.org/docs/startup_shutdown.html
 
-		nonsupport.
 
 	Windows:
+			kbengine_ogre_demo\kbengine\kbe\bin\Hybrid\!(win)fixedstart.bat.
+			also see: http://www.kbengine.org/docs/startup_shutdown.html
 
-		kbengine\kbe\src\client\ogre\!start.bat.
+
+Start the client:
+
+	Linux:
+			nonsupport.
+
+	Windows:
+			kbengine_ogre_demo\kbengine\kbe\bin\client\!start.bat.
+
+
+##Installation:
+
+	Change the login address:
+		kbengine_ogre_demo\kbengine\kbe\bin\client\kbengine.xml
+
+
+![screenshots1](http://www.kbengine.org/assets/img/screenshots/ogre_demo1.jpg)
+![screenshots2](http://www.kbengine.org/assets/img/screenshots/ogre_demo2.jpg)
+![screenshots3](http://www.kbengine.org/assets/img/screenshots/ogre_demo3.jpg)
