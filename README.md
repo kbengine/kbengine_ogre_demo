@@ -31,6 +31,10 @@ http://www.kbengine.org
 		
 		5. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\client\ogre\client_for_ogre_vc90.sln -> build.
 
+		6. Copy Ogre-dlls to client.
+			kbengine_ogre_demo\ogre3d\bin\debug\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
+			kbengine_ogre_demo\ogre3d\bin\release\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
+
 
 ##Start the servers:
 
@@ -43,7 +47,7 @@ http://www.kbengine.org
 			also see: http://www.kbengine.org/docs/startup_shutdown.html
 
 
-Start the client:
+##Start the client:
 
 	Linux:
 			nonsupport.
