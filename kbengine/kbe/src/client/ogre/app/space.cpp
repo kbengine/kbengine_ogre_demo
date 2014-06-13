@@ -1,3 +1,4 @@
+#pragma warning(disable:4251) 
 #include "space.h"
 #include "OgreApplication.h"
 

@@ -1,3 +1,8 @@
+#pragma warning(disable:4251) 
+#pragma warning(disable:4244) 
+#pragma warning(disable:4193)
+#pragma warning(disable:4275) 
+
 #include "space_world.h"
 #include "space_login.h"
 #include "DotSceneLoader.h"
@@ -70,7 +75,13 @@ SpaceWorld::~SpaceWorld(void)
 //-------------------------------------------------------------------------------------
 void SpaceWorld::addSpaceGeometryMapping(std::string respath)
 {
-	mSceneProjectDir = respath;
+	mSceneProjectDir = std::string(kbe_getPyUserResPath());
+
+	if(mSceneProjectDir[mSceneProjectDir.size() - 1] != '\\' && mSceneProjectDir[mSceneProjectDir.size() - 1] != '/')
+		mSceneProjectDir += "\\";
+
+	mSceneProjectDir += std::string("spaces/") + respath + "/Scenes/Scene";
+
 	loadSpaceGeometryMapping();
 }
 

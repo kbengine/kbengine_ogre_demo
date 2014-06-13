@@ -1,3 +1,4 @@
+#pragma warning(disable:4251) 
 #include "OgreApplication.h"
 #include "DotSceneLoader.h"
 #include "PagedGeometry.h"

@@ -1,3 +1,4 @@
+#pragma warning(disable:4251) 
 #include "space_login.h"
 #include "space_avatarselect.h"
 #include "OgreApplication.h"
