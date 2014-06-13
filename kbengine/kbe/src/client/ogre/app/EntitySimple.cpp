@@ -31,6 +31,16 @@ EntitySimple::~EntitySimple()
 //-------------------------------------------------------------------------------------
 void EntitySimple::addTime(Real deltaTime)
 {
+	if(mState == 1)
+	{
+		if(mLastAnimName != "Die")
+		{
+			playAnimation("Die");
+		}
+
+		return;
+	}
+
 	if(blocktime_ <= 0.f)
 	{
 		Ogre::Vector3 currpos = getLastPosition();
