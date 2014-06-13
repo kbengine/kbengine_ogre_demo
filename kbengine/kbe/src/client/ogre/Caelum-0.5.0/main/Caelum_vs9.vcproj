@@ -67,6 +67,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalOptions="/ignore:4251&#x0D;&#x0A;/ignore:4305"
 				AdditionalDependencies="OgreMain.lib"
 				OutputFile="..\..\..\..\..\bin\client\caelum.dll"
 				LinkIncremental="1"
@@ -155,6 +156,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalOptions="/ignore:4251&#x0D;&#x0A;/ignore:4305"
 				AdditionalDependencies="OgreMain_d.lib"
 				OutputFile="..\..\..\..\..\bin\client\caelum_d.dll"
 				LinkIncremental="2"

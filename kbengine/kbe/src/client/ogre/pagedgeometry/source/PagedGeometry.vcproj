@@ -81,6 +81,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				AdditionalOptions="/ignore:4251&#x0D;&#x0A;/ignore:4305"
 				OutputFile="..\..\..\libs\PagedGeometry_d.lib"
 			/>
 			<Tool
@@ -169,6 +170,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
+				AdditionalOptions="/ignore:4251&#x0D;&#x0A;/ignore:4305"
 				OutputFile="..\..\..\libs\PagedGeometry.lib"
 			/>
 			<Tool

@@ -61,6 +61,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalOptions="/ignore:4251&#x0D;&#x0A;/ignore:4305"
 				AdditionalDependencies="PagedGeometry_d.lib OgreMain_d.lib OgreTerrain_d.lib OgreRTShaderSystem_d.lib OgrePaging_d.lib OIS_d.lib freetype_d.lib FreeImage_d.lib OgreProperty_d.lib"
 				OutputFile="..\..\..\..\bin\client\$(ProjectName)_d.exe"
 				LinkIncremental="2"
@@ -138,6 +139,7 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
+				AdditionalOptions="/ignore:4251&#x0D;&#x0A;/ignore:4305"
 				AdditionalDependencies="PagedGeometry.lib OgreMain.lib OgreTerrain.lib OgreRTShaderSystem.lib OgrePaging.lib OIS.lib freetype.lib FreeImage.lib OgreProperty.lib"
 				OutputFile="..\..\..\..\bin\client\$(ProjectName).exe"
 				LinkIncremental="1"
