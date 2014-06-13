@@ -494,7 +494,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_CREATEDENTITY:
 		{
 			const KBEngine::EventData_CreatedEntity* pEventData_createEntity = static_cast<const KBEngine::EventData_CreatedEntity*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData_createEntity->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData_createEntity->entityID;
 			KBEntity* pEntity = NULL;
 			
 			if(kbe_playerID() == eid)
@@ -509,7 +509,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_ENTERWORLD:
 		{
 			const KBEngine::EventData_EnterWorld* pEventData_EnterWorld = static_cast<const KBEngine::EventData_EnterWorld*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData_EnterWorld->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData_EnterWorld->entityID;
 			
 			ENTITIES::iterator iter = mEntities.find(eid);
 			if(iter == mEntities.end())
@@ -539,7 +539,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 		break;
 	case CLIENT_EVENT_LEAVEWORLD:
 		{
-			KBEngine::ENTITY_ID eid = static_cast<const KBEngine::EventData_EnterWorld*>(lpEventData)->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = static_cast<const KBEngine::EventData_LeaveWorld*>(lpEventData)->entityID;
 			if(kbe_playerID() == eid)
 				mPlayerPtr = NULL;
 			
@@ -555,7 +555,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_POSITION_CHANGED:
 		{
 			const KBEngine::EventData_PositionChanged* pEventData = static_cast<const KBEngine::EventData_PositionChanged*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData->entityID;
 
 			ENTITIES::iterator iter = mEntities.find(eid);
 			if(iter == mEntities.end())
@@ -567,7 +567,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_DIRECTION_CHANGED:
 		{
 			const KBEngine::EventData_DirectionChanged* pEventData = static_cast<const KBEngine::EventData_DirectionChanged*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData->entityID;
 
 			ENTITIES::iterator iter = mEntities.find(eid);
 			if(iter == mEntities.end())
@@ -579,7 +579,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_POSITION_FORCE:
 		{
 			const KBEngine::EventData_PositionForce* pEventData = static_cast<const KBEngine::EventData_PositionForce*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData->entityID;
 
 			ENTITIES::iterator iter = mEntities.find(eid);
 			if(iter == mEntities.end())
@@ -592,7 +592,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_DIRECTION_FORCE:
 		{
 			const KBEngine::EventData_DirectionForce* pEventData = static_cast<const KBEngine::EventData_DirectionForce*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData->entityID;
 
 			ENTITIES::iterator iter = mEntities.find(eid);
 			if(iter == mEntities.end())
@@ -604,7 +604,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_MOVESPEED_CHANGED:
 		{
 			const KBEngine::EventData_MoveSpeedChanged* pEventData = static_cast<const KBEngine::EventData_MoveSpeedChanged*>(lpEventData);
-			KBEngine::ENTITY_ID eid = pEventData->pEntity->aspectID();
+			KBEngine::ENTITY_ID eid = pEventData->entityID;
 			
 			ENTITIES::iterator iter = mEntities.find(eid);
 			if(iter == mEntities.end())
