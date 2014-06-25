@@ -199,7 +199,13 @@ public:
 		mMoveSpeed = speed; 
 	}
 
-	void setName(const Ogre::DisplayString& name){ mName = name; }
+	void setName(const Ogre::DisplayString& name)
+	{ 
+		mName = name; 
+
+		if(pNameLabel_)
+			pNameLabel_->setCaption(name);
+	}
 
 	void inWorld(bool v)
 	{ 

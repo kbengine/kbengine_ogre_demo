@@ -41,11 +41,11 @@ MovableText::MovableText(const String &name,
 						 , mPositionOffset(Vector3::ZERO)
 						 , mScaleOffset(Vector3::UNIT_SCALE)
 {
-	if (name == StringUtil::BLANK )
-		throw Exception(Exception::ERR_INVALIDPARAMS, "Trying to create MovableText without name", "MovableText::MovableText");
+//	if (name == StringUtil::BLANK )
+//		throw Exception(Exception::ERR_INVALIDPARAMS, "Trying to create MovableText without name", "MovableText::MovableText");
 
 	if (caption == StringUtil::BLANK )
-		throw Exception(Exception::ERR_INVALIDPARAMS, "Trying to create MovableText without caption", "MovableText::MovableText");
+		mCaption = Ogre::DisplayString(name);
 
 	mRenderOp.vertexData = NULL;
 	this->setFontName(mFontName);

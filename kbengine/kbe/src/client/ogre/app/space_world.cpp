@@ -516,6 +516,10 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 				break;
 			
 			KBEntity* pEntity = iter->second.get();
+			if(kbe_playerID() == eid)
+			{
+				break;
+			}
 
 			pEntity->setup(mSceneMgr);
 
@@ -525,6 +529,31 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 			pEntity->setMoveSpeed(pEventData_EnterWorld->speed);
 			pEntity->setDestDirection(pEventData_EnterWorld->yaw, pEventData_EnterWorld->pitch, pEventData_EnterWorld->roll);
 			pEntity->setDirection(pEventData_EnterWorld->yaw, pEventData_EnterWorld->pitch, pEventData_EnterWorld->roll);
+
+			pEntity->inWorld(true);
+
+			//pEntity->visable(true);
+		}
+		break;
+	case CLIENT_EVENT_ENTERSPACE:
+		{
+			const KBEngine::EventData_EnterSpace* pEventData_EnterSpace = static_cast<const KBEngine::EventData_EnterSpace*>(lpEventData);
+			KBEngine::ENTITY_ID eid = pEventData_EnterSpace->entityID;
+			
+			ENTITIES::iterator iter = mEntities.find(eid);
+			if(iter == mEntities.end())
+				break;
+			
+			KBEntity* pEntity = iter->second.get();
+
+			pEntity->setup(mSceneMgr);
+
+			pEntity->setPosition(pEventData_EnterSpace->x, pEventData_EnterSpace->y, pEventData_EnterSpace->z);
+			pEntity->setDestPosition(pEventData_EnterSpace->x, pEventData_EnterSpace->y, pEventData_EnterSpace->z);
+			pEntity->scale(0.3f, 0.3f, 0.3f);
+			pEntity->setMoveSpeed(pEventData_EnterSpace->speed);
+			pEntity->setDestDirection(pEventData_EnterSpace->yaw, pEventData_EnterSpace->pitch, pEventData_EnterSpace->roll);
+			pEntity->setDirection(pEventData_EnterSpace->yaw, pEventData_EnterSpace->pitch, pEventData_EnterSpace->roll);
 
 			if(kbe_playerID() == eid)
 			{
@@ -540,6 +569,21 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_LEAVEWORLD:
 		{
 			KBEngine::ENTITY_ID eid = static_cast<const KBEngine::EventData_LeaveWorld*>(lpEventData)->entityID;
+			if(kbe_playerID() == eid)
+				mPlayerPtr = NULL;
+			
+			if(mTargetPtr && mTargetPtr->id() == eid)
+				mTargetPtr = NULL;
+		
+			if(mMouseTargetPtr && mMouseTargetPtr->id() == eid)
+				mMouseTargetPtr = NULL;
+			
+			mEntities.erase(eid);
+		}
+		break;
+	case CLIENT_EVENT_LEAVESPACE:
+		{
+			KBEngine::ENTITY_ID eid = static_cast<const KBEngine::EventData_LeaveSpace*>(lpEventData)->entityID;
 			if(kbe_playerID() == eid)
 				mPlayerPtr = NULL;
 			
