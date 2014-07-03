@@ -381,6 +381,9 @@ void kbe_update()
 //-------------------------------------------------------------------------------------
 const char* kbe_getLastAccountName()
 {
+	if(!pconfig->useLastAccountName())
+		return "";
+
 	return pconfig->accountName();
 }
 
