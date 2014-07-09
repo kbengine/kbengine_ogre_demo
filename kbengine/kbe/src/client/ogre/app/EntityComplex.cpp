@@ -168,6 +168,9 @@ void EntityComplex::setupBody(SceneManager* sceneMgr)
 //-------------------------------------------------------------------------------------
 void EntityComplex::injectKeyDown(const OIS::KeyEvent& evt)
 {
+	if(getState() == 1)
+		return;
+
 	if (evt.key == OIS::KC_Q && (mTopAnimID == ANIM_IDLE_TOP || mTopAnimID == ANIM_RUN_TOP))
 	{
 		// take swords out (or put them back, since it's the same animation but reversed)
@@ -219,6 +222,9 @@ void EntityComplex::injectKeyDown(const OIS::KeyEvent& evt)
 //-------------------------------------------------------------------------------------
 void EntityComplex::injectKeyUp(const OIS::KeyEvent& evt)
 {
+	if(getState() == 1)
+		return;
+
 	// keep track of the player's intended direction
 	if (evt.key == OIS::KC_W && mKeyDirection.z == -1) mKeyDirection.z = 0;
 	else if (evt.key == OIS::KC_A && mKeyDirection.x == -1) mKeyDirection.x = 0;
@@ -237,6 +243,9 @@ void EntityComplex::injectKeyUp(const OIS::KeyEvent& evt)
 //-------------------------------------------------------------------------------------
 void EntityComplex::injectMouseMove(const OIS::MultiTouchEvent& evt)
 {
+	if(getState() == 1)
+		return;
+
 	// update camera goal based on mouse movement
 	updateCameraGoal(-0.05f * evt.state.X.rel, -0.05f * evt.state.Y.rel, -0.1f * evt.state.Z.rel);
 }
@@ -244,6 +253,9 @@ void EntityComplex::injectMouseMove(const OIS::MultiTouchEvent& evt)
 //-------------------------------------------------------------------------------------
 void EntityComplex::injectMouseDown(const OIS::MultiTouchEvent& evt)
 {
+	if(getState() == 1)
+		return;
+
 	if (mSwordsDrawn && (mTopAnimID == ANIM_IDLE_TOP || mTopAnimID == ANIM_RUN_TOP))
 	{
 		// if swords are out, and character's not doing something weird, then SLICE!
@@ -331,6 +343,9 @@ void EntityComplex::setupCamera(Camera* cam)
 void EntityComplex::updateBody(Real deltaTime)
 {
 	mGoalDirection = Vector3::ZERO;   // we will calculate this
+
+	if(getState() == 1)
+		mKeyDirection = Vector3::ZERO;
 
 	if (mKeyDirection != Vector3::ZERO && mBaseAnimID != ANIM_DANCE)
 	{
