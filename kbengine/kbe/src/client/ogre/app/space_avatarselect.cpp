@@ -159,7 +159,7 @@ void SpaceAvatarSelect::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 						Py_ssize_t pos = 0;
 						while (PyDict_Next(pyitem, &pos, &key, &value)) 
 						{
-							wchar_t* PyUnicode_AsWideCharStringRet0 = PyUnicode_AsWideCharString(PyDict_GetItemString(value, "name"), NULL);
+							wchar_t* PyUnicode_AsWideCharStringRet0 = PyUnicode_AsWideCharString(PyList_GetItem(value, 1), NULL);
 							char* name = wchar2char(PyUnicode_AsWideCharStringRet0);
 							PyMem_Free(PyUnicode_AsWideCharStringRet0);
 							
