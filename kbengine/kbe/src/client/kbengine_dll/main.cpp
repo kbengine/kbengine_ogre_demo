@@ -366,7 +366,10 @@ bool kbe_login(const char* accountName, const char* passwd, const char* ip, KBEn
 		port = pconfig->port();
 	}
 
-	return g_pApp->login(accountName, passwd, ip, port);
+	kbe_lock();
+	bool ret = g_pApp->login(accountName, passwd, ip, port);
+	kbe_unlock();
+	return ret;
 }
 
 //-------------------------------------------------------------------------------------
