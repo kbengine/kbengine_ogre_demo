@@ -125,6 +125,14 @@ void SpaceLogin::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 			MessageBox( NULL, str, "error!", MB_OK);
 		}
 		break;
+	case CLIENT_EVENT_SCRIPT_VERSION_NOT_MATCH:
+		{
+			const KBEngine::EventData_ScriptVersionNotMatch* info = static_cast<const KBEngine::EventData_ScriptVersionNotMatch*>(lpEventData);
+			char str[256];
+			sprintf(str, "SpaceLogin::kbengine_onEvent: scriptVerInfo=%s not match(server:%s)", info->verInfo.c_str(), info->serVerInfo.c_str());
+			MessageBox( NULL, str, "error!", MB_OK);
+		}
+		break;
 	case CLIENT_EVENT_LAST_ACCOUNT_INFO:
 		{
 			const KBEngine::EventData_LastAccountInfo* info = static_cast<const KBEngine::EventData_LastAccountInfo*>(lpEventData);
