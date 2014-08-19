@@ -109,19 +109,38 @@ void SpaceLogin::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 	case CLIENT_EVENT_LOGIN_SUCCESS:
 		break;
 	case CLIENT_EVENT_LOGIN_FAILED:
-		MessageBox( NULL, "SpaceLogin::kbengine_onEvent login is failed!", "warning!", MB_OK);
+		{
+			const KBEngine::EventData_LoginFailed* info = static_cast<const KBEngine::EventData_LoginFailed*>(lpEventData);
+			char str[256];
+
+			if(info->failedcode == 20)
+			{
+				sprintf(str, "server is starting, please wait!");
+			}
+			else
+			{
+				sprintf(str, "SpaceLogin::kbengine_onEvent(): login is failed(code=%u)!", info->failedcode);
+			}
+
+			MessageBox( NULL, str, "warning!", MB_OK);
+		}
 		break;
 	case CLIENT_EVENT_LOGIN_GATEWAY_SUCCESS:
 		OgreApplication::getSingleton().changeSpace(new SpaceAvatarSelect(mRoot, mWindow, mInputManager, mTrayMgr));
 		break;
 	case CLIENT_EVENT_LOGIN_GATEWAY_FAILED:
-		MessageBox( NULL, "SpaceLogin::kbengine_onEvent loginGateway is failed!", "warning!", MB_OK);
+		{
+			const KBEngine::EventData_LoginGatewayFailed* info = static_cast<const KBEngine::EventData_LoginGatewayFailed*>(lpEventData);
+			char str[256];
+			sprintf(str, "SpaceLogin::kbengine_onEvent(): loginGateway is failed(code=%u)!", info->failedcode);
+			MessageBox( NULL, str, "warning!", MB_OK);
+		}
 		break;
 	case CLIENT_EVENT_VERSION_NOT_MATCH:
 		{
 			const KBEngine::EventData_VersionNotMatch* info = static_cast<const KBEngine::EventData_VersionNotMatch*>(lpEventData);
 			char str[256];
-			sprintf(str, "SpaceLogin::kbengine_onEvent: verInfo=%s not match(server:%s)", info->verInfo.c_str(), info->serVerInfo.c_str());
+			sprintf(str, "SpaceLogin::kbengine_onEvent(): verInfo=%s not match(server:%s)", info->verInfo.c_str(), info->serVerInfo.c_str());
 			MessageBox( NULL, str, "error!", MB_OK);
 		}
 		break;
@@ -129,7 +148,7 @@ void SpaceLogin::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 		{
 			const KBEngine::EventData_ScriptVersionNotMatch* info = static_cast<const KBEngine::EventData_ScriptVersionNotMatch*>(lpEventData);
 			char str[256];
-			sprintf(str, "SpaceLogin::kbengine_onEvent: scriptVerInfo=%s not match(server:%s)", info->verInfo.c_str(), info->serVerInfo.c_str());
+			sprintf(str, "SpaceLogin::kbengine_onEvent(): scriptVerInfo=%s not match(server:%s)", info->verInfo.c_str(), info->serVerInfo.c_str());
 			MessageBox( NULL, str, "error!", MB_OK);
 		}
 		break;
