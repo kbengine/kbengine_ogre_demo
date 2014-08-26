@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>Caelum</ProjectName>
+    <ProjectGuid>{A46CAB97-7D11-2041-998E-0040A09A0D47}</ProjectGuid>
+    <RootNamespace>Caelum</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../bin/release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../obj/release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../bin/debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../obj/debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>echo OGRE_HOME is %OGRE_HOME%</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)/include;$(OGRE_HOME)/include/OGRE;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;CAELUM_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>CaelumPrecompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>CAELUM_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4251
+/ignore:4305 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>OgreMain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\..\bin\client\caelum.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)/lib;$(OGRE_HOME)/lib/release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../lib/release/caelum.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>echo OGRE_HOME is %OGRE_HOME%</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)/include;$(OGRE_HOME)/include/OGRE;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;CAELUM_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>CaelumPrecompiled.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;CAELUM_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;$(OGRE_HOME)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4251
+/ignore:4305 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>OgreMain_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\..\..\bin\client\caelum_d.dll</OutputFile>
+      <AdditionalLibraryDirectories>$(OGRE_HOME)/lib;$(OGRE_HOME)/lib/debug;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)caelum_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <ImportLibrary>../lib/debug/caelum_d.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Astronomy.h" />
+    <ClInclude Include="include\Caelum.h" />
+    <ClInclude Include="include\CaelumExceptions.h" />
+    <ClInclude Include="include\CaelumPlugin.h" />
+    <ClInclude Include="include\CaelumPrecompiled.h" />
+    <ClInclude Include="include\CaelumPrerequisites.h" />
+    <ClInclude Include="include\CaelumScriptTranslator.h" />
+    <ClInclude Include="include\CaelumSystem.h" />
+    <ClInclude Include="include\CameraBoundElement.h" />
+    <ClInclude Include="include\CloudSystem.h" />
+    <ClInclude Include="include\DepthComposer.h" />
+    <ClInclude Include="include\FastGpuParamRef.h" />
+    <ClInclude Include="include\FlatCloudLayer.h" />
+    <ClInclude Include="include\GroundFog.h" />
+    <ClInclude Include="include\ImageHelper.h" />
+    <ClInclude Include="include\ImageStarfield.h" />
+    <ClInclude Include="include\InternalUtilities.h" />
+    <ClInclude Include="include\Moon.h" />
+    <ClInclude Include="include\PointStarfield.h" />
+    <ClInclude Include="include\PrecipitationController.h" />
+    <ClInclude Include="include\PrivatePtr.h" />
+    <ClInclude Include="include\SkyDome.h" />
+    <ClInclude Include="include\SkyLight.h" />
+    <ClInclude Include="include\Sun.h" />
+    <ClInclude Include="include\TypeDescriptor.h" />
+    <ClInclude Include="include\UniversalClock.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Astronomy.cpp" />
+    <ClCompile Include="src\BrightStarCatalogue.cpp" />
+    <ClCompile Include="src\CaelumDefaultTypeDescriptorData.cpp" />
+    <ClCompile Include="src\CaelumPlugin.cpp" />
+    <ClCompile Include="src\CaelumPrecompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\CaelumScriptTranslator.cpp" />
+    <ClCompile Include="src\CaelumSystem.cpp" />
+    <ClCompile Include="src\CameraBoundElement.cpp" />
+    <ClCompile Include="src\CloudSystem.cpp" />
+    <ClCompile Include="src\DepthComposer.cpp" />
+    <ClCompile Include="src\FastGpuParamRef.cpp" />
+    <ClCompile Include="src\FlatCloudLayer.cpp" />
+    <ClCompile Include="src\GroundFog.cpp" />
+    <ClCompile Include="src\ImageStarfield.cpp" />
+    <ClCompile Include="src\InternalUtilities.cpp" />
+    <ClCompile Include="src\Moon.cpp" />
+    <ClCompile Include="src\PointStarfield.cpp" />
+    <ClCompile Include="src\PrecipitationController.cpp" />
+    <ClCompile Include="src\SkyDome.cpp" />
+    <ClCompile Include="src\SkyLight.cpp" />
+    <ClCompile Include="src\Sun.cpp" />
+    <ClCompile Include="src\TypeDescriptor.cpp" />
+    <ClCompile Include="src\UniversalClock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\AtmosphereDepth.png" />
+    <None Include="resources\CaelumGroundFog.cg" />
+    <None Include="resources\CaelumLayeredClouds.cg" />
+    <None Include="resources\CaelumPhaseMoon.cg" />
+    <None Include="resources\CaelumPointStarfield.cg" />
+    <None Include="resources\CaelumSkyDome.cg" />
+    <None Include="resources\CloudCoverLookup.png" />
+    <None Include="resources\DepthComposer.cg" />
+    <None Include="resources\DepthComposer.compositor" />
+    <None Include="resources\DepthComposer.material" />
+    <None Include="resources\DepthRender.program" />
+    <None Include="resources\EarthClearSky2.png" />
+    <None Include="resources\GroundFog.material" />
+    <None Include="resources\GroundFog.program" />
+    <None Include="resources\Haze.program" />
+    <None Include="resources\LayeredClouds.material" />
+    <None Include="resources\MinimalCompositorVP.cg" />
+    <None Include="resources\MinimalCompositorVP.program" />
+    <None Include="resources\moon.material" />
+    <None Include="resources\moon_disc.dds" />
+    <None Include="resources\noise1.dds" />
+    <None Include="resources\noise2.dds" />
+    <None Include="resources\noise3.dds" />
+    <None Include="resources\noise4.dds" />
+    <None Include="resources\PointStarfield.material" />
+    <None Include="resources\Precipitation.cg" />
+    <None Include="resources\Precipitation.compositor" />
+    <None Include="resources\Precipitation.material" />
+    <None Include="resources\precipitation_drizzle.png" />
+    <None Include="resources\precipitation_hail.png" />
+    <None Include="resources\precipitation_icecrystals.png" />
+    <None Include="resources\precipitation_icepellets.png" />
+    <None Include="resources\precipitation_rain.png" />
+    <None Include="resources\precipitation_smallhail.png" />
+    <None Include="resources\precipitation_snow.png" />
+    <None Include="resources\precipitation_snowgrains.png" />
+    <None Include="resources\SkyDome.material" />
+    <None Include="resources\sphere.mesh" />
+    <None Include="resources\Starfield.jpg" />
+    <None Include="resources\Starfield.material" />
+    <None Include="resources\Sun.material" />
+    <None Include="resources\sun_disc.png" />
+    <None Include="resources\SunGradient.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

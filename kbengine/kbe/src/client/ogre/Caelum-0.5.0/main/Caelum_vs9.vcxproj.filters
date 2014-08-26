@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{ad7fcd9d-8a36-4537-ac94-a776fe4e77a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bf12c0b8-30c1-42d7-a4dc-e0107ae7b4e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{13406c16-9bad-4aa9-b30b-e4bc87479b7b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Astronomy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Caelum.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaelumExceptions.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaelumPlugin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaelumPrecompiled.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaelumPrerequisites.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaelumScriptTranslator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CaelumSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CameraBoundElement.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CloudSystem.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DepthComposer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FastGpuParamRef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FlatCloudLayer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GroundFog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImageHelper.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImageStarfield.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InternalUtilities.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Moon.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PointStarfield.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PrecipitationController.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\PrivatePtr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkyDome.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SkyLight.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Sun.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TypeDescriptor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UniversalClock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Astronomy.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BrightStarCatalogue.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaelumDefaultTypeDescriptorData.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaelumPlugin.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaelumPrecompiled.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaelumScriptTranslator.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CaelumSystem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CameraBoundElement.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CloudSystem.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DepthComposer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FastGpuParamRef.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FlatCloudLayer.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GroundFog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageStarfield.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InternalUtilities.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Moon.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PointStarfield.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PrecipitationController.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkyDome.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SkyLight.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sun.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TypeDescriptor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UniversalClock.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\AtmosphereDepth.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\CaelumGroundFog.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\CaelumLayeredClouds.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\CaelumPhaseMoon.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\CaelumPointStarfield.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\CaelumSkyDome.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\CloudCoverLookup.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\DepthComposer.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\DepthComposer.compositor">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\DepthComposer.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\DepthRender.program">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\EarthClearSky2.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\GroundFog.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\GroundFog.program">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Haze.program">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\LayeredClouds.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\MinimalCompositorVP.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\MinimalCompositorVP.program">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\moon.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\moon_disc.dds">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\noise1.dds">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\noise2.dds">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\noise3.dds">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\noise4.dds">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\PointStarfield.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Precipitation.cg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Precipitation.compositor">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Precipitation.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_drizzle.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_hail.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_icecrystals.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_icepellets.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_rain.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_smallhail.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_snow.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\precipitation_snowgrains.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\SkyDome.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\sphere.mesh">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Starfield.jpg">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Starfield.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\Sun.material">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\sun_disc.png">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="resources\SunGradient.png">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+</Project>
