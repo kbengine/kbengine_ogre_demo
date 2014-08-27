@@ -17,7 +17,7 @@ http://www.kbengine.org
 
 	Windows:
 
-		1. Download and install OGRE-1.8.1 SDK, (http://www.ogre3d.org/download/sdk).
+		1. Download and install OGRE 1.8.1 SDK for Visual C++ 2010 (32-bit), (http://www.ogre3d.org/download/sdk).
 			Decompression to kbengine_ogre_demo\ogresdk\*.
 			Set environment variables: OGRE_HOME = **\kbengine_ogre_demo\ogresdk
 
