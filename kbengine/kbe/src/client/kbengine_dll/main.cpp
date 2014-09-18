@@ -48,6 +48,7 @@
 #define DEFINE_IN_INTERFACE
 #include "dbmgr/dbmgr_interface.hpp"
 
+#undef DEFINE_IN_INTERFACE
 #include "machine/machine_interface.hpp"
 #define DEFINE_IN_INTERFACE
 #include "machine/machine_interface.hpp"
@@ -71,11 +72,6 @@
 #include "tools/bots/bots_interface.hpp"
 #define DEFINE_IN_INTERFACE
 #include "tools/bots/bots_interface.hpp"
-
-#undef DEFINE_IN_INTERFACE
-#include "resourcemgr/resourcemgr_interface.hpp"
-#define DEFINE_IN_INTERFACE
-#include "resourcemgr/resourcemgr_interface.hpp"
 
 using namespace KBEngine;
 
@@ -290,7 +286,7 @@ bool kbe_init()
 		}
 	}
 
-	INFO_MSG(boost::format("---- %1% is running ----\n") % COMPONENT_NAME_EX(g_componentType));
+	INFO_MSG(fmt::format("---- {} is running ----\n", COMPONENT_NAME_EX(g_componentType)));
 
 	PyEval_ReleaseThread(PyThreadState_Get());
 	KBEConcurrency::setMainThreadIdleFunctions(&releaseLock, &acquireLock);
@@ -306,7 +302,7 @@ bool kbe_destroy()
 	SAFE_RELEASE(g_pTelnetServer);
 
 	g_break = true;
-	g_pApp->getMainDispatcher().breakProcessing();
+	g_pApp->mainDispatcher().breakProcessing();
 	g_pThreadPool->finalise();
 	KBEngine::sleep(100);
 	
@@ -328,7 +324,7 @@ bool kbe_destroy()
 	SAFE_RELEASE(pserverconfig);
 	SAFE_RELEASE(pconfig);
 
-	INFO_MSG(boost::format("%1% has shut down.\n") % COMPONENT_NAME_EX(g_componentType));
+	INFO_MSG(fmt::format("{} has shut down.\n", COMPONENT_NAME_EX(g_componentType)));
 	return ret;
 }
 
@@ -422,15 +418,15 @@ PyObject* kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method,
 	client::Entity* pEntity = g_pApp->pEntities()->find(entityID);
 	if(!pEntity)
 	{
-		ERROR_MSG(boost::format("kbe_callEntityMethod::entity %1% not found!\n") % entityID);
+		ERROR_MSG(fmt::format("kbe_callEntityMethod::entity {} not found!\n", entityID));
 		return NULL;
 	}
 
 	PyObject* pyfunc = PyObject_GetAttrString(pEntity, method);
 	if(pyfunc == NULL)
 	{
-		ERROR_MSG(boost::format("kbe_callEntityMethod::entity %1% method(%2%) not found!\n") % 
-			entityID % method);
+		ERROR_MSG(fmt::format("kbe_callEntityMethod::entity {} method({}) not found!\n", 
+			entityID, method));
 
 		return NULL;
 	}
