@@ -5,7 +5,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "cstdkbe/cstdkbe.hpp"
-#include "python.h"
+#include "Python.h"
 
 #ifdef KBE_DLL_API
 #else
