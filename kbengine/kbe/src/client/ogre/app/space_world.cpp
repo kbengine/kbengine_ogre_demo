@@ -686,9 +686,9 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 						break;
 
 					std::string name = root[1].asString();
-					wchar_t* wname = char2wchar(name.c_str());
-					pEntity->setName(wname);
-					free(wname);																			
+					wchar_t wname[1024]; 
+					MultiByteToWideChar(CP_UTF8, 0, name.c_str(), -1, wname, 1024);  
+					pEntity->setName(wname);																		
 				}
 				else if(peventdata->name == "set_modelScale")
 				{
