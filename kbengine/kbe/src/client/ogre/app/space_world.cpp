@@ -665,157 +665,100 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 		case CLIENT_EVENT_SCRIPT:
 			{
 				const KBEngine::EventData_Script* peventdata = static_cast<const KBEngine::EventData_Script*>(lpEventData);
+				Json::Reader reader;
+				Json::Value root;
+
+				if (!reader.parse(peventdata->datas.c_str(), root))
+				{  
+					assert(false);
+				}
+
+				KBEngine::ENTITY_ID eid = root[Json::Value::UInt(0)].asInt();
+				ENTITIES::iterator iter = mEntities.find(eid);
+				KBEntity* pEntity = NULL;
+
+				if(iter != mEntities.end())
+					pEntity = iter->second.get();
+
 				if(peventdata->name == "set_name")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
+					if(pEntity == NULL)
+						break;
 
-						ENTITIES::iterator iter = mEntities.find(eid);
-						if(iter == mEntities.end())
-							break;
-						
-						KBEntity* pEntity = iter->second.get();
-
-						wchar_t* PyUnicode_AsWideCharStringRet0 = PyUnicode_AsWideCharString(pyitem1, NULL);
-						pEntity->setName(PyUnicode_AsWideCharStringRet0);
-						//char* name = wchar2char(PyUnicode_AsWideCharStringRet0);
-						PyMem_Free(PyUnicode_AsWideCharStringRet0);
-						//free(name);																				
-					}
+					std::string name = root[1].asString();
+					wchar_t* wname = char2wchar(name.c_str());
+					pEntity->setName(wname);
+					free(wname);																			
 				}
 				else if(peventdata->name == "set_modelScale")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
-						uint32 scale = PyLong_AsUnsignedLong(pyitem1);	
+					if(pEntity == NULL)
+						break;
 
-						ENTITIES::iterator iter = mEntities.find(eid);
-						if(iter == mEntities.end())
-							break;
-
-						iter->second->scale(scale / 100.0);
-					}
+					uint32 scale = root[1].asUInt();	
+					pEntity->scale(scale / 100.0);
 				}
 				else if(peventdata->name == "set_modelID")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
-						uint32 modelID = PyLong_AsUnsignedLong(pyitem1);	
+					if(pEntity == NULL)
+						break;
 
-						ENTITIES::iterator iter = mEntities.find(eid);
-						if(iter == mEntities.end())
-							break;
-
-						iter->second->setModelID(modelID);
-					}
+					uint32 modelID = root[1].asUInt();		
+					pEntity->setModelID(modelID);
 				}
 				else if(peventdata->name == "set_state")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
-						int32 state = PyLong_AsLong(pyitem1);	
+					if(pEntity == NULL)
+						break;
 
-						ENTITIES::iterator iter = mEntities.find(eid);
-						if(iter == mEntities.end())
-							break;
-
-						iter->second->setState(state);
-					}
+					int32 state = root[1].asInt();	
+					pEntity->setState(state);
 				}
 				else if(peventdata->name == "set_HP_Max")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
-						int32 v = PyLong_AsLong(pyitem1);	
+					if(pEntity == NULL)
+						break;
 
-						ENTITIES::iterator iter = mEntities.find(eid);
-						if(iter == mEntities.end())
-							break;
-
-						iter->second->setHPMAX(v);
-					}
+					int32 v = root[1].asInt();		
+					pEntity->setHPMAX(v);
 				}
 				else if(peventdata->name == "set_MP_Max")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
-						int32 v = PyLong_AsLong(pyitem1);	
+					if(pEntity == NULL)
+						break;
 
-						ENTITIES::iterator iter = mEntities.find(eid);
-						if(iter == mEntities.end())
-							break;
-
-						iter->second->setMPMAX(v);
-					}
+					int32 v = root[1].asInt();		
+					pEntity->setMPMAX(v);
 				}
 				else if(peventdata->name == "recvDamage")
 				{
-					if(peventdata->argsSize > 0)
-					{
-						PyObject* pyitem0 = PyTuple_GetItem(peventdata->pyDatas, 0);
-						PyObject* pyitem1 = PyTuple_GetItem(peventdata->pyDatas, 1);
-						PyObject* pyitem2 = PyTuple_GetItem(peventdata->pyDatas, 2);
-						PyObject* pyitem3 = PyTuple_GetItem(peventdata->pyDatas, 3);
-						PyObject* pyitem4 = PyTuple_GetItem(peventdata->pyDatas, 4);
+					KBEngine::ENTITY_ID attackerID = root[1].asInt();	
+					uint32 skillID = root[2].asUInt();
+					uint32 damageType = root[3].asUInt();
+					uint32 damage = root[4].asUInt();
 
-						KBEngine::ENTITY_ID eid = PyLong_AsUnsignedLong(pyitem0);
-						KBEngine::ENTITY_ID attackerID = PyLong_AsUnsignedLong(pyitem1);	
-						uint32 skillID = PyLong_AsUnsignedLong(pyitem2);	
-						uint32 damageType = PyLong_AsUnsignedLong(pyitem3);	
-						uint32 damage = PyLong_AsUnsignedLong(pyitem4);	
-
-						ENTITIES::iterator iter = mEntities.find(attackerID);
-						ENTITIES::iterator iter1 = mEntities.find(eid);
+					ENTITIES::iterator iter = mEntities.find(attackerID);
 						
-						KBEntity* attacker = NULL;
-						KBEntity* receiver = NULL;
+					KBEntity* attacker = NULL;
+					KBEntity* receiver = pEntity;
 
-						if(iter != mEntities.end())
-						{
-							attacker = iter->second.get();
-						}
+					if(iter != mEntities.end())
+					{
+						attacker = iter->second.get();
+					}
 
-						if(iter1 != mEntities.end())
-						{
-							receiver = iter1->second.get();
-						}
+					if(attacker)
+					{
+						attacker->attack(receiver, skillID, damageType, damage);
+					}
 
-						if(attacker)
-						{
-							attacker->attack(receiver, skillID, damageType, damage);
-						}
-
-						if(receiver)
-						{
-							receiver->recvDamage(attacker, skillID, damageType, damage);
-						}
+					if(receiver)
+					{
+						receiver->recvDamage(attacker, skillID, damageType, damage);
 					}
 				}
 			}
+			
 			break;
 	default:
 		break;

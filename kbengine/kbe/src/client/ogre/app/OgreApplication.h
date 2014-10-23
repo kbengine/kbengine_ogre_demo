@@ -7,6 +7,7 @@
 #include <Terrain/OgreTerrainGroup.h>
 #include <OgreImage.h>
 #include "client_lib/event.hpp"
+#include "json/json.h"
 
 class DotSceneLoader;
 class Space;

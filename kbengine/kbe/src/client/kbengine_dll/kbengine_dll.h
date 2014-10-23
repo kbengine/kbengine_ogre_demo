@@ -108,8 +108,8 @@ KBE_DLL_API bool kbe_deregisterEventHandle(KBEngine::EventHandle* pHandle);
 /**
 	调用脚本entity的方法 
 */
-KBE_DLL_API PyObject* kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method, 
-										   PyObject *args, PyObject *kw = NULL); 
+KBE_DLL_API void kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method, 
+										   const char* strargs); 
 
 
 /**

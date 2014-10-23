@@ -53,7 +53,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;$(OGRE_HOME)\include;$(OGRE_HOME)\OgreMain\include;$(OGRE_HOME)\Components\Terrain\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../jsoncpp/include;../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;$(OGRE_HOME)\include;$(OGRE_HOME)\OgreMain\include;$(OGRE_HOME)\Components\Terrain\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -66,7 +66,7 @@
     <Link>
       <AdditionalOptions>/ignore:4251
 /ignore:4305 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>PagedGeometry_d.lib;OgreMain_d.lib;OgreTerrain_d.lib;OgreRTShaderSystem_d.lib;OgrePaging_d.lib;OIS_d.lib;freetype_d.lib;FreeImage_d.lib;OgreProperty_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib_json_d.lib;PagedGeometry_d.lib;OgreMain_d.lib;OgreTerrain_d.lib;OgreRTShaderSystem_d.lib;OgrePaging_d.lib;OIS_d.lib;freetype_d.lib;FreeImage_d.lib;OgreProperty_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\client\$(ProjectName)_d.exe</OutputFile>
       <AdditionalLibraryDirectories>..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -79,7 +79,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;$(OGRE_HOME)\include;$(OGRE_HOME)\OgreMain\include;$(OGRE_HOME)\Components\Terrain\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../jsoncpp/include;../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;$(OGRE_HOME)\include;$(OGRE_HOME)\OgreMain\include;$(OGRE_HOME)\Components\Terrain\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -91,7 +91,7 @@
     <Link>
       <AdditionalOptions>/ignore:4251
 /ignore:4305 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib_json.lib;jsoncpp.lib;PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\client\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -138,11 +138,13 @@
   <ItemGroup>
     <ProjectReference Include="..\..\kbengine_dll\kbengine_client_dll.vcxproj">
       <Project>{65d320d2-7e54-4903-828a-c48185059aa4}</Project>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
     <ProjectReference Include="..\Caelum-0.5.0\main\Caelum_vs9.vcxproj">
       <Project>{a46cab97-7d11-2041-998e-0040a09a0d47}</Project>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\jsoncpp\makefiles\vs71\lib_json.vcxproj">
+      <Project>{b84f7231-16ce-41d8-8c08-7b523ff4225b}</Project>
     </ProjectReference>
     <ProjectReference Include="..\pagedgeometry\source\PagedGeometry.vcxproj">
       <Project>{32e48b49-f91f-4f62-830e-7f2f8f06c8df}</Project>

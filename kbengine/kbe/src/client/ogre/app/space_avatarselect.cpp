@@ -102,12 +102,7 @@ void SpaceAvatarSelect::buttonHit(OgreBites::Button* button)
 		}
 
 		kbe_lock();
-		PyObject* arg = Py_BuildValue("K", g_selAvatarDBID);
-		PyObject* args = PyTuple_New(1);
-		PyTuple_SetItem(args, 0, arg);
-		PyObject* ret = kbe_callEntityMethod(kbe_playerID(), "selectAvatarGame", args);
-		Py_DECREF(args);
-		Py_XDECREF(ret);
+		kbe_callEntityMethod(kbe_playerID(), "selectAvatarGame", KBEngine::StringConv::val2str(g_selAvatarDBID).c_str());
 		kbe_unlock();
 
 		OgreApplication::getSingleton().changeSpace(new SpaceWorld(mRoot, mWindow, mInputManager, mTrayMgr));
@@ -115,10 +110,7 @@ void SpaceAvatarSelect::buttonHit(OgreBites::Button* button)
 	else if(button->getCaption() == "create avatar")
 	{
 		kbe_lock();
-		PyObject* args = Py_BuildValue("is", 1, "kbengine");
-		PyObject* ret = kbe_callEntityMethod(kbe_playerID(), "reqCreateAvatar", args);
-		Py_DECREF(args);
-		Py_XDECREF(ret);
+		kbe_callEntityMethod(kbe_playerID(), "reqCreateAvatar", "[1, \"kbengine\"]");
 		kbe_unlock();
 	}
 	else
@@ -145,41 +137,29 @@ void SpaceAvatarSelect::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 				const KBEngine::EventData_Script* peventdata = static_cast<const KBEngine::EventData_Script*>(lpEventData);
 				if(peventdata->name == "update_avatars")
 				{
-					if(peventdata->argsSize > 0)
+					for(KBEngine::uint32 i=0; i<g_avatars.size(); i++)
 					{
-						PyObject* pyitem = PyTuple_GetItem(peventdata->pyDatas, 0);
-						for(KBEngine::uint32 i=0; i<g_avatars.size(); i++)
-						{
-							mTrayMgr->destroyWidget(g_avatars[i]);
-						}
+						mTrayMgr->destroyWidget(g_avatars[i]);
+					}
 						
-						g_avatars.clear();
+					g_avatars.clear();
 
-						PyObject *key, *value;
-						Py_ssize_t pos = 0;
-						while (PyDict_Next(pyitem, &pos, &key, &value)) 
-						{
-							wchar_t* PyUnicode_AsWideCharStringRet0 = PyUnicode_AsWideCharString(PyList_GetItem(value, 1), NULL);
-							char* name = wchar2char(PyUnicode_AsWideCharStringRet0);
-							PyMem_Free(PyUnicode_AsWideCharStringRet0);
-							
-							KBEngine::DBID dbid = 0;
-							dbid = PyLong_AsUnsignedLongLong(key);
- 							if (PyErr_Occurred())																	
- 							{																						
-								dbid = PyLong_AsUnsignedLong(key);														
-							}	
- 							if (PyErr_Occurred())																	
- 							{																						
-								PyErr_PrintEx(0);																	
-							}	
+					Json::Reader reader;
+					Json::Value root;
+
+					if (reader.parse(peventdata->datas.c_str(), root))
+					{  
+						Json::Value::Members mem = root.getMemberNames();  
+						for (auto iter = mem.begin(); iter != mem.end(); iter++)  
+						{  
+							Json::Value& val = root[*iter];
+							std::string name = val[1].asString();
+							KBEngine::DBID dbid = val[Json::Value::UInt(0)].asUInt();
 
 							Ogre::String str = Ogre::String(name) + "_" + KBEngine::StringConv::val2str(dbid);
 							g_avatars.push_back(str);
 							mTrayMgr->createButton(OgreBites::TL_CENTER, str, str, 300);
-
-							free(name);
-						}																					
+						}
 					}
 				}
 			}

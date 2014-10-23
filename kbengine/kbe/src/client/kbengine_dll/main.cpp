@@ -411,15 +411,17 @@ bool kbe_deregisterEventHandle(KBEngine::EventHandle* pHandle)
 }
 
 //-------------------------------------------------------------------------------------
-PyObject* kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method, 
-							   PyObject *args, PyObject *kw)
+void kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method, 
+							   const char* strargs)
 {
+	PyObject *args = NULL;
+
 	// KBEngine::script::PyThreadStateLock lock;
 	client::Entity* pEntity = g_pApp->pEntities()->find(entityID);
 	if(!pEntity)
 	{
 		ERROR_MSG(fmt::format("kbe_callEntityMethod::entity {} not found!\n", entityID));
-		return NULL;
+		return;
 	}
 
 	PyObject* pyfunc = PyObject_GetAttrString(pEntity, method);
@@ -428,18 +430,23 @@ PyObject* kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method,
 		ERROR_MSG(fmt::format("kbe_callEntityMethod::entity {} method({}) not found!\n", 
 			entityID, method));
 
-		return NULL;
+		return;
 	}
 
-	PyObject* ret = PyObject_Call(pyfunc, args, kw); 
+	args = PyTuple_New(1);
+	PyTuple_SET_ITEM(args, 0, PyUnicode_FromString(strargs));
+	PyObject* ret = PyObject_Call(pyfunc, args, NULL); 
 	Py_DECREF(pyfunc);
-
+	Py_DECREF(args);
+	
 	if(ret == NULL)
 	{
 		SCRIPT_ERROR_CHECK();
 	}
-
-	return ret;
+	else
+	{
+		Py_DECREF(ret);
+	}
 }
 
 void kbe_fireEvent(const char *eventID, PyObject *args)
