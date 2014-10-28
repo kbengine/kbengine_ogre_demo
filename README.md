@@ -18,6 +18,7 @@ http://www.kbengine.org
 	Windows:
 
 		1. Download and install OGRE 1.8.1 SDK for Visual C++ 2010 (32-bit), (http://www.ogre3d.org/download/sdk).
+			(https://sourceforge.net/projects/ogre/files/ogre/1.8/1.8.1/OgreSDK_vc10_v1-8-1.exe/download)
 			Decompression to kbengine_ogre_demo\ogresdk\*.
 			Set environment variables: OGRE_HOME = **\kbengine_ogre_demo\ogresdk
 
@@ -27,9 +28,9 @@ http://www.kbengine.org
 			Decompression(kbengine-xxx.zip\kbengine-xxx\*) to kbengine_ogre_demo\kbengine\*.
 			Covering all the directories and files.
 
-		4. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\kbengine_vs90.sln -> build.
+		4. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\kbengine_vs**.sln -> build.
 		
-		5. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\client\ogre\client_for_ogre_vc90.sln -> build.
+		5. Microsoft Visual Studio-> kbengine_ogre_demo\kbengine\kbe\src\client\ogre\client_for_ogre_vc**.sln -> build.
 
 		6. Copy Ogre-dlls to client.
 			kbengine_ogre_demo\ogre3d\bin\debug\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
