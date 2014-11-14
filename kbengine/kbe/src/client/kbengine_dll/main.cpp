@@ -77,8 +77,8 @@ using namespace KBEngine;
 
 ClientApp* g_pApp = NULL;
 KBEngine::script::Script* g_pScript = NULL;
-Mercury::EventDispatcher* g_pDispatcher = NULL;
-Mercury::NetworkInterface* g_pNetworkInterface = NULL;
+Network::EventDispatcher* g_pDispatcher = NULL;
+Network::NetworkInterface* g_pNetworkInterface = NULL;
 thread::ThreadPool* g_pThreadPool = NULL;
 ServerConfig* pserverconfig = NULL;
 Config* pconfig = NULL;
@@ -219,11 +219,11 @@ bool kbe_init()
 		g_pScript = new KBEngine::script::Script();
 
 	if(g_pDispatcher == NULL)
-		g_pDispatcher = new Mercury::EventDispatcher();
+		g_pDispatcher = new Network::EventDispatcher();
 
 	if(g_pNetworkInterface == NULL)
 	{
-		g_pNetworkInterface = new Mercury::NetworkInterface(g_pDispatcher, 
+		g_pNetworkInterface = new Network::NetworkInterface(g_pDispatcher, 
 			0, 0, "", 0, 0,
 			0, "", 0, 0);
 	}
@@ -449,6 +449,7 @@ void kbe_callEntityMethod(KBEngine::ENTITY_ID entityID, const char *method,
 	}
 }
 
+//-------------------------------------------------------------------------------------
 void kbe_fireEvent(const char *eventID, PyObject *args)
 {
 	KBEngine::script::PyThreadStateLock lock;
