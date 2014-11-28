@@ -1,8 +1,8 @@
 #include "space_avatarselect.h"
 #include "space_world.h"
 #include "OgreApplication.h"
-#include "cstdkbe/cstdkbe.hpp"
-#include "cstdkbe/stringconv.hpp"
+#include "common/common.hpp"
+#include "common/stringconv.hpp"
 #include "pyscript/pythread_lock.hpp"
 #include "../../kbengine_dll/kbengine_dll.h"
 

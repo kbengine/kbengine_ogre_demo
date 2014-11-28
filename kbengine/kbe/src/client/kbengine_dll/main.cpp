@@ -3,12 +3,12 @@
 #define KBE_DLL_API extern "C" _declspec(dllexport)
 #include "kbengine_dll.h"
 
-#include "cstdkbe/cstdkbe.hpp"
+#include "common/common.hpp"
 #include "client_lib/kbemain.hpp"
 #include "server/serverconfig.hpp"
 #include "server/telnet_server.hpp"
-#include "cstdkbe/memorystream.hpp"
-#include "cstdkbe/kbekey.hpp"
+#include "common/memorystream.hpp"
+#include "common/kbekey.hpp"
 #include "thread/threadtask.hpp"
 #include "thread/concurrency.hpp"
 #include "helper/debug_helper.hpp"

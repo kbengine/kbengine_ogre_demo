@@ -9,7 +9,7 @@
 #include "space_world.h"
 #include "space_login.h"
 #include "space_avatarselect.h"
-#include "cstdkbe/cstdkbe.hpp"
+#include "common/common.hpp"
 #include "pyscript/pythread_lock.hpp"
 
 #include "../../kbengine_dll/kbengine_dll.h"
