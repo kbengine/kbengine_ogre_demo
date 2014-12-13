@@ -206,7 +206,7 @@ bool kbe_init()
 		return false;
 	}
 
-	DebugHelper::initHelper(g_componentType);
+	DebugHelper::initialize(g_componentType);
 
 	INFO_MSG( "-----------------------------------------------------------------------------------------\n\n\n");
 
