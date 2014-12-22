@@ -19,8 +19,8 @@ http://www.kbengine.org
 
 		1. Download and install OGRE 1.8.1 SDK for Visual C++ 2010 (32-bit), (http://www.ogre3d.org/download/sdk).
 			(https://sourceforge.net/projects/ogre/files/ogre/1.8/1.8.1/OgreSDK_vc10_v1-8-1.exe/download)
-			Decompression to kbengine_ogre_demo\ogresdk\*.
-			Set environment variables: OGRE_HOME = **\kbengine_ogre_demo\ogresdk
+			Decompression to <Your Path>\kbengine_ogre_demo\ogresdk\*.
+			Set environment variables: OGRE_HOME = <Your Path>\kbengine_ogre_demo\ogresdk
 
 		2. Download and install Microsoft DirectX SDK 9.0, (http://www.microsoft.com/en-hk/download/details.aspx?id=6812).
 
@@ -39,9 +39,9 @@ http://www.kbengine.org
 
 ##Set environment variables(for server)
 
-	KBE_ROOT = **/kbengine_ogre_demo/kbengine/
-	KBE_RES_PATH=%KBE_ROOT%kbe/res/;%KBE_ROOT%demo/;%KBE_ROOT%demo/scripts/;%KBE_ROOT%demo/res/
-	KBE_BIN_PATH=%KBE_ROOT%kbe/bin/server/
+	KBE_ROOT = <Your Path>/kbengine_ogre_demo/kbengine/
+	KBE_RES_PATH = %KBE_ROOT%kbe/res/;%KBE_ROOT%demo/;%KBE_ROOT%demo/scripts/;%KBE_ROOT%demo/res/
+	KBE_BIN_PATH = %KBE_ROOT%kbe/bin/server/
 
 
 ##Start the servers:
