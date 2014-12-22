@@ -37,6 +37,13 @@ http://www.kbengine.org
 			kbengine_ogre_demo\ogre3d\bin\release\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
 
 
+##Set environment variables(for server)
+
+	KBE_ROOT = **/kbengine_ogre_demo/kbengine/
+	KBE_RES_PATH=%KBE_ROOT%kbe/res/;%KBE_ROOT%demo/;%KBE_ROOT%demo/scripts/;%KBE_ROOT%demo/res/
+	KBE_BIN_PATH=%KBE_ROOT%kbe/bin/server/
+
+
 ##Start the servers:
 
 	Linux:
