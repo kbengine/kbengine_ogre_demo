@@ -4,7 +4,7 @@
 #include "Ogre.h"
 #include "OIS.h"
 #include "OgreMovableText.h"
-#include "common/common.hpp"
+#include "common/common.h"
 
 using namespace Ogre;
 

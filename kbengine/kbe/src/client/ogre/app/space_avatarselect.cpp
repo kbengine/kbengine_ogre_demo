@@ -1,9 +1,9 @@
 #include "space_avatarselect.h"
 #include "space_world.h"
 #include "OgreApplication.h"
-#include "common/common.hpp"
-#include "common/stringconv.hpp"
-#include "pyscript/pythread_lock.hpp"
+#include "common/common.h"
+#include "common/stringconv.h"
+#include "pyscript/pythread_lock.h"
 #include "../../kbengine_dll/kbengine_dll.h"
 
 std::vector<Ogre::String> g_avatars;

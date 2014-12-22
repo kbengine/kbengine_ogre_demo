@@ -9,8 +9,8 @@
 #include "space_world.h"
 #include "space_login.h"
 #include "space_avatarselect.h"
-#include "common/common.hpp"
-#include "pyscript/pythread_lock.hpp"
+#include "common/common.h"
+#include "pyscript/pythread_lock.h"
 
 #include "../../kbengine_dll/kbengine_dll.h"
 

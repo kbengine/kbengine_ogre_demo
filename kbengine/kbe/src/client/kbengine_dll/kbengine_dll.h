@@ -4,7 +4,7 @@
 #pragma warning(disable : 4049)
 #include "stdio.h"
 #include "stdlib.h"
-#include "common/common.hpp"
+#include "common/common.h"
 #include "Python.h"
 
 #ifdef KBE_DLL_API

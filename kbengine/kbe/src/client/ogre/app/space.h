@@ -3,7 +3,7 @@
 #define __SPACE_CLIENT_h_
 
 #include "BaseApplication.h"
-#include "client_lib/event.hpp"
+#include "client_lib/event.h"
 
 class Space
 {

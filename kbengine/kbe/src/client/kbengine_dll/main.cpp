@@ -3,75 +3,75 @@
 #define KBE_DLL_API extern "C" _declspec(dllexport)
 #include "kbengine_dll.h"
 
-#include "common/common.hpp"
-#include "client_lib/kbemain.hpp"
-#include "server/serverconfig.hpp"
-#include "server/telnet_server.hpp"
-#include "common/memorystream.hpp"
-#include "common/kbekey.hpp"
-#include "thread/threadtask.hpp"
-#include "thread/concurrency.hpp"
-#include "helper/debug_helper.hpp"
-#include "network/address.hpp"
-#include "client_lib/event.hpp"
-#include "client_lib/config.hpp"
-#include "pyscript/pythread_lock.hpp"
+#include "common/common.h"
+#include "client_lib/kbemain.h"
+#include "server/serverconfig.h"
+#include "server/telnet_server.h"
+#include "common/memorystream.h"
+#include "common/kbekey.h"
+#include "thread/threadtask.h"
+#include "thread/concurrency.h"
+#include "helper/debug_helper.h"
+#include "network/address.h"
+#include "client_lib/event.h"
+#include "client_lib/config.h"
+#include "pyscript/pythread_lock.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "client_lib/client_interface.hpp"
+#include "client_lib/client_interface.h"
 #define DEFINE_IN_INTERFACE
 #define CLIENT
-#include "client_lib/client_interface.hpp"
+#include "client_lib/client_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "baseapp/baseapp_interface.hpp"
+#include "baseapp/baseapp_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "baseapp/baseapp_interface.hpp"
+#include "baseapp/baseapp_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "loginapp/loginapp_interface.hpp"
+#include "loginapp/loginapp_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "loginapp/loginapp_interface.hpp"
+#include "loginapp/loginapp_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "cellapp/cellapp_interface.hpp"
+#include "cellapp/cellapp_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "cellapp/cellapp_interface.hpp"
+#include "cellapp/cellapp_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "baseappmgr/baseappmgr_interface.hpp"
+#include "baseappmgr/baseappmgr_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "baseappmgr/baseappmgr_interface.hpp"
+#include "baseappmgr/baseappmgr_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "dbmgr/dbmgr_interface.hpp"
+#include "dbmgr/dbmgr_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "dbmgr/dbmgr_interface.hpp"
+#include "dbmgr/dbmgr_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "machine/machine_interface.hpp"
+#include "machine/machine_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "machine/machine_interface.hpp"
+#include "machine/machine_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "cellappmgr/cellappmgr_interface.hpp"
+#include "cellappmgr/cellappmgr_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "cellappmgr/cellappmgr_interface.hpp"
+#include "cellappmgr/cellappmgr_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "tools/message_log/messagelog_interface.hpp"
+#include "tools/message_log/messagelog_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "tools/message_log/messagelog_interface.hpp"
+#include "tools/message_log/messagelog_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "tools/billing_system/billingsystem_interface.hpp"
+#include "tools/billing_system/billingsystem_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "tools/billing_system/billingsystem_interface.hpp"
+#include "tools/billing_system/billingsystem_interface.h"
 
 #undef DEFINE_IN_INTERFACE
-#include "tools/bots/bots_interface.hpp"
+#include "tools/bots/bots_interface.h"
 #define DEFINE_IN_INTERFACE
-#include "tools/bots/bots_interface.hpp"
+#include "tools/bots/bots_interface.h"
 
 using namespace KBEngine;
 

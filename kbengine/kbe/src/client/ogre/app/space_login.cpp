@@ -2,8 +2,8 @@
 #include "space_login.h"
 #include "space_avatarselect.h"
 #include "OgreApplication.h"
-#include "common/common.hpp"
-#include "common/stringconv.hpp"
+#include "common/common.h"
+#include "common/stringconv.h"
 #include "../../kbengine_dll/kbengine_dll.h"
 
 Ogre::String g_accountName;
