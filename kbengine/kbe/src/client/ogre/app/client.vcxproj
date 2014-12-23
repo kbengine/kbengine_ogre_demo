@@ -92,7 +92,7 @@
     <Link>
       <AdditionalOptions>/ignore:4251
 /ignore:4305 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>lib_json.lib;jsoncpp.lib;PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib_json.lib;PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\client\$(ProjectName).exe</OutputFile>
       <AdditionalLibraryDirectories>..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
