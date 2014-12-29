@@ -37,8 +37,9 @@ http://www.kbengine.org
 			kbengine_ogre_demo\ogre3d\bin\release\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
 
 		7. Download demo-assets(server):
-			https://github.com/kbengine/kbengine_demos_assets/archive/master.zip
-			unzip and copy to kbengine/
+			https://github.com/kbengine/kbengine_demos_assets/releases/latest
+			unzip and Covering to kbengine/kbengine_demos_assets
+
 ![demo_configure](http://www.kbengine.org/assets/img/screenshots/demo_copy_kbengine.jpg)
 
 
@@ -50,10 +51,9 @@ http://www.kbengine.org
 
 	Start server:
 		Windows:
-
 			kbengine\kbengine_demos_assets\start_server_fixed.bat
-		Linux:
 
+		Linux:
 			kbengine\kbengine_demos_assets\start_server_fixed.sh
 
 		(More: http://www.kbengine.org/docs/startup_shutdown.html)
