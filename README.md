@@ -36,24 +36,34 @@ http://www.kbengine.org
 			kbengine_ogre_demo\ogre3d\bin\debug\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
 			kbengine_ogre_demo\ogre3d\bin\release\*.dll to kbengine_ogre_demo\kbengine\kbe\bin\client\
 
+		7. Download demo-assets(server):
+			https://github.com/kbengine/kbengine_demos_assets/archive/master.zip
+			unzip and copy to kbengine/
+![demo_configure](http://www.kbengine.org/assets/img/screenshots/demo_copy_kbengine.jpg)
 
-##Set environment variables(for server)
-
-	KBE_ROOT = <Your Path>/kbengine_ogre_demo/kbengine/
-	KBE_RES_PATH = %KBE_ROOT%kbe/res/;%KBE_ROOT%demo/;%KBE_ROOT%demo/scripts/;%KBE_ROOT%demo/res/
-	KBE_BIN_PATH = %KBE_ROOT%kbe/bin/server/
 
 
 ##Start the servers:
 
-	Linux:
-			http://www.kbengine.org/docs/startup_shutdown.html
+	Installation(KBEngine):
+			http://www.kbengine.org/docs/installation.html
+
+	Start server:
+		Windows:
+
+			kbengine\kbengine_demos_assets\start_server_fixed.bat
+		Linux:
+
+			kbengine\kbengine_demos_assets\start_server_fixed.sh
+
+		(More: http://www.kbengine.org/docs/startup_shutdown.html)
 
 
-	Windows:
-			kbengine_ogre_demo\kbengine\kbe\bin\Hybrid\!(win)fixedstart.bat.
-			also see: http://www.kbengine.org/docs/startup_shutdown.html
 
+##Configure client:
+
+	Change the login address:
+		kbengine_ogre_demo\kbengine\kbe\bin\client\kbengine.xml
 
 ##Start the client:
 
@@ -64,10 +74,7 @@ http://www.kbengine.org
 			kbengine_ogre_demo\kbengine\kbe\bin\client\!start.bat.
 
 
-##Installation:
 
-	Change the login address:
-		kbengine_ogre_demo\kbengine\kbe\bin\client\kbengine.xml
 
 
 ![screenshots1](http://www.kbengine.org/assets/img/screenshots/ogre_demo1.jpg)
