@@ -289,7 +289,7 @@ bool kbe_init()
 	INFO_MSG(fmt::format("---- {} is running ----\n", COMPONENT_NAME_EX(g_componentType)));
 
 	PyEval_ReleaseThread(PyThreadState_Get());
-	KBEConcurrency::setMainThreadIdleFunctions(&releaseLock, &acquireLock);
+	KBEConcurrency::setMainThreadIdleCallbacks(&releaseLock, &acquireLock);
 
 	g_pThreadPool->addTask(new KBEMainTask());
 	return true;
