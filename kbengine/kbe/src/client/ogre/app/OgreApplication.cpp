@@ -23,6 +23,7 @@ namespace KBEngine{
 	COMPONENT_ORDER g_componentGlobalOrder = 1;
 	COMPONENT_ORDER g_componentGroupOrder = 1;
 	COMPONENT_ID g_componentID = 1;
+	int32 g_genuuid_sections = -1;
 }
 
 template<> OgreApplication* Ogre::Singleton<OgreApplication>::msSingleton = 0;
