@@ -354,7 +354,8 @@ const char* kbe_getPyUserResPath()
 }
 
 //-------------------------------------------------------------------------------------
-bool kbe_login(const char* accountName, const char* passwd, const char* ip, KBEngine::uint32 port)
+bool kbe_login(const char* accountName, const char* passwd, const KBEngine::uint8* datas, KBEngine::uint32 datasize, 
+	const char* ip, KBEngine::uint32 port)
 {
 	if(ip == NULL || port == 0)
 	{
@@ -363,7 +364,9 @@ bool kbe_login(const char* accountName, const char* passwd, const char* ip, KBEn
 	}
 
 	kbe_lock();
-	bool ret = g_pApp->login(accountName, passwd, ip, port);
+	std::string sdatas;
+	sdatas.assign((const char*)datas, datasize);
+	bool ret = g_pApp->login(accountName, passwd, sdatas, ip, port);
 	kbe_unlock();
 	return ret;
 }

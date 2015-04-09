@@ -58,7 +58,7 @@ KBE_DLL_API KBEngine::uint32 kbe_getSystemTime();
 /**
 	µÇÂ¼·þÎñÆ÷
 */
-KBE_DLL_API bool kbe_login(const char* accountName, const char* passwd, 
+KBE_DLL_API bool kbe_login(const char* accountName, const char* passwd, const KBEngine::uint8* datas = NULL, KBEngine::uint32 datasize = 0,
 						   const char* ip = NULL, KBEngine::uint32 port = 0);
 
 /**
