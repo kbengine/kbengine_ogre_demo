@@ -94,7 +94,8 @@ void SpaceLogin::buttonHit(OgreBites::Button* button)
 {
 	if(button->getCaption() == "fast login")
 	{
-		if(!kbe_login(g_accountName.c_str(), "123456"))
+		std::string datas = "kbengine_ogre_demo";
+		if(!kbe_login(g_accountName.c_str(), "123456", datas.data(), datas.size()))
 		{
 			MessageBox( NULL, "SpaceLogin::connect is error!", "warning!", MB_OK);
 		}

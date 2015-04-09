@@ -354,7 +354,7 @@ const char* kbe_getPyUserResPath()
 }
 
 //-------------------------------------------------------------------------------------
-bool kbe_login(const char* accountName, const char* passwd, const KBEngine::uint8* datas, KBEngine::uint32 datasize, 
+bool kbe_login(const char* accountName, const char* passwd, const char* datas, KBEngine::uint32 datasize, 
 	const char* ip, KBEngine::uint32 port)
 {
 	if(ip == NULL || port == 0)
