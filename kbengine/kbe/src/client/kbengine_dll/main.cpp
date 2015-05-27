@@ -353,7 +353,6 @@ const char* kbe_getPyUserResPath()
 	return s.c_str();
 }
 
-
 //-------------------------------------------------------------------------------------
 bool kbe_createAccount(const char* accountName, const char* passwd, const char* datas, KBEngine::uint32 datasize)
 {
