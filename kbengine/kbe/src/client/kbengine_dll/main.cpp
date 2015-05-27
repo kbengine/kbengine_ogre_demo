@@ -355,7 +355,7 @@ const char* kbe_getPyUserResPath()
 
 
 //-------------------------------------------------------------------------------------
-bool kbe_login(const char* accountName, const char* passwd, const char* datas, KBEngine::uint32 datasize)
+bool kbe_createAccount(const char* accountName, const char* passwd, const char* datas, KBEngine::uint32 datasize)
 {
 	kbe_lock();
 	std::string sdatas;
