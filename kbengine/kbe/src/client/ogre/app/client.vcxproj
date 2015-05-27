@@ -94,7 +94,7 @@
 /ignore:4305 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>lib_json.lib;PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\client\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>..\..\..\..\ogresdk;..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\ogresdk;..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>

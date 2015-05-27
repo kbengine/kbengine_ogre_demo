@@ -353,6 +353,18 @@ const char* kbe_getPyUserResPath()
 	return s.c_str();
 }
 
+
+//-------------------------------------------------------------------------------------
+bool kbe_login(const char* accountName, const char* passwd, const char* datas, KBEngine::uint32 datasize)
+{
+	kbe_lock();
+	std::string sdatas;
+	sdatas.assign((const char*)datas, datasize);
+	bool ret = g_pApp->createAccount(accountName, passwd, sdatas, pconfig->ip(), pconfig->port());
+	kbe_unlock();
+	return ret;
+}
+
 //-------------------------------------------------------------------------------------
 bool kbe_login(const char* accountName, const char* passwd, const char* datas, KBEngine::uint32 datasize, 
 	const char* ip, KBEngine::uint32 port)
