@@ -126,14 +126,14 @@ void SpaceLogin::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 			MessageBox( NULL, str, "warning!", MB_OK);
 		}
 		break;
-	case CLIENT_EVENT_LOGIN_GATEWAY_SUCCESS:
+	case CLIENT_EVENT_LOGIN_BASEAPP_SUCCESS:
 		OgreApplication::getSingleton().changeSpace(new SpaceAvatarSelect(mRoot, mWindow, mInputManager, mTrayMgr));
 		break;
-	case CLIENT_EVENT_LOGIN_GATEWAY_FAILED:
+	case CLIENT_EVENT_LOGIN_BASEAPP_FAILED:
 		{
-			const KBEngine::EventData_LoginGatewayFailed* info = static_cast<const KBEngine::EventData_LoginGatewayFailed*>(lpEventData);
+			const KBEngine::EventData_LoginBaseappFailed* info = static_cast<const KBEngine::EventData_LoginBaseappFailed*>(lpEventData);
 			char str[256];
-			sprintf(str, "SpaceLogin::kbengine_onEvent(): loginGateway is failed(code=%u)!", info->failedcode);
+			sprintf(str, "SpaceLogin::kbengine_onEvent(): loginBaseapp is failed(code=%u)!", info->failedcode);
 			MessageBox( NULL, str, "warning!", MB_OK);
 		}
 		break;
