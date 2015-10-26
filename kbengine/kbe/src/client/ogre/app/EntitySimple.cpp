@@ -2,8 +2,8 @@
 #include "space_world.h"
 #include "DotSceneLoader.h"
 #include <ctime>
-#include <Terrain/OgreTerrain.h>
-#include <Terrain/OgreTerrainGroup.h>
+#include <Terrain/include/OgreTerrain.h>
+#include <Terrain/include/OgreTerrainGroup.h>
 
 #include "../../kbengine_dll/kbengine_dll.h"
 

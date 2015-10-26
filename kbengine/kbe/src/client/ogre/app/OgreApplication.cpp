@@ -9,6 +9,7 @@
 #include "space_world.h"
 #include "space_login.h"
 #include "space_avatarselect.h"
+#include <boost/thread/thread.hpp>
 #include "common/common.h"
 #include "pyscript/pythread_lock.h"
 

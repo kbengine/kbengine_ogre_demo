@@ -2,7 +2,7 @@
 #define __ENTITY_CLIENT_OGRE_H__
 
 #include "Ogre.h"
-#include "OIS.h"
+#include "OIS/OIS.h"
 #include "OgreMovableText.h"
 #include "common/common.h"
 

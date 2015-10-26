@@ -3,8 +3,8 @@
 #define __OgreApplication_h_
 
 #include "BaseApplication.h"
-#include <Terrain/OgreTerrain.h>
-#include <Terrain/OgreTerrainGroup.h>
+#include <Terrain/include/OgreTerrain.h>
+#include <Terrain/include/OgreTerrainGroup.h>
 #include <OgreImage.h>
 #include "client_lib/event.h"
 #include "json/json.h"

@@ -6,8 +6,8 @@
 #include "Entity.h"
 #include "LensFlare.h"
 #include "DecalObject.h"
-#include <Terrain/OgreTerrain.h>
-#include <Terrain/OgreTerrainGroup.h>
+#include <Terrain/include/OgreTerrain.h>
+#include <Terrain/include/OgreTerrainGroup.h>
 #include <OgreImage.h>
 
 class DotSceneLoader;

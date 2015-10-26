@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -20,10 +20,12 @@
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -54,7 +56,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>../jsoncpp/include;../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;$(OGRE_HOME)\include;$(OGRE_HOME)\OgreMain\include;$(OGRE_HOME)\Components\Terrain\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../jsoncpp/include;../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;..\..\..\..\..\..\ogresdk\include;..\..\..\..\..\..\ogresdk\OgreMain\include;..\..\..\..\..\..\ogresdk\Components\Terrain\include;..\..\..\..\..\..\ogresdk\include\OIS;..\..\..\..\..\..\ogresdk\include\OGRE;..\..\..\..\..\..\ogresdk\Samples\Common\include;..\..\..\..\..\..\ogresdk\boost;..\..\..\..\..\..\ogresdk\Dependencies\include;..\..\..\..\..\..\ogresdk\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -67,9 +69,9 @@
     <Link>
       <AdditionalOptions>/ignore:4251
 /ignore:4305 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>lib_json_d.lib;PagedGeometry_d.lib;OgreMain_d.lib;OgreTerrain_d.lib;OgreRTShaderSystem_d.lib;OgrePaging_d.lib;OIS_d.lib;freetype_d.lib;FreeImage_d.lib;OgreProperty_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib_json_d.lib;PagedGeometry_d.lib;OgreMain_d.lib;OgreTerrain_d.lib;OgreRTShaderSystem_d.lib;OgrePaging_d.lib;OIS_d.lib;freetype2311_d.lib;FreeImaged.lib;OgreProperty_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\client\$(ProjectName)_d.exe</OutputFile>
-      <AdditionalLibraryDirectories>..\..\..\..\..\..\ogresdk;..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\ogresdk\Dependencies\lib\Debug;..\..\..\..\..\..\ogresdk\boost\lib;..\..\..\..\..\..\ogresdk\lib\Debug;..\..\..\libs;..\..\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
@@ -80,7 +82,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../jsoncpp/include;../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;$(OGRE_HOME)\include;$(OGRE_HOME)\OgreMain\include;$(OGRE_HOME)\Components\Terrain\include;$(OGRE_HOME)\include\OIS;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\Samples\Common\include;$(OGRE_HOME)\boost;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../jsoncpp/include;../../../lib/python/PC;../../../lib/python/Include;../../../lib;..\pagedgeometry\include;..\..\..\..\..\..\ogresdk\include;..\..\..\..\..\..\ogresdk\OgreMain\include;..\..\..\..\..\..\ogresdk\Components\Terrain\include;..\..\..\..\..\..\ogresdk\include\OIS;..\..\..\..\..\..\ogresdk\include\OGRE;..\..\..\..\..\..\ogresdk\Samples\Common\include;..\..\..\..\..\..\ogresdk\boost;..\..\..\..\..\..\ogresdk\Dependencies\include;..\..\..\..\..\..\ogresdk\Components;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -92,9 +94,9 @@
     <Link>
       <AdditionalOptions>/ignore:4251
 /ignore:4305 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>lib_json.lib;PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>lib_json.lib;PagedGeometry.lib;OgreMain.lib;OgreTerrain.lib;OgreRTShaderSystem.lib;OgrePaging.lib;OIS.lib;freetype2311.lib;FreeImage.lib;OgreProperty.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>..\..\..\..\bin\client\$(ProjectName).exe</OutputFile>
-      <AdditionalLibraryDirectories>..\..\..\..\..\..\ogresdk;..\..\..\libs;..\..\libs;$(OGRE_HOME)\lib\release;$(OGRE_HOME)\boost\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\..\..\..\..\ogresdk\boost\lib;..\..\..\..\..\..\ogresdk\Dependencies\lib\Release;..\..\..\..\..\..\ogresdk\lib\Release;..\..\..\libs;..\..\libs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>

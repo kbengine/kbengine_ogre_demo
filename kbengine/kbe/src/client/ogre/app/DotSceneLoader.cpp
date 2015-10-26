@@ -1,8 +1,8 @@
 #include "DotSceneLoader.h"
 #include <Ogre.h>
-#include <Terrain/OgreTerrain.h>
-#include <Terrain/OgreTerrainGroup.h>
-#include <Terrain/OgreTerrainMaterialGeneratorA.h>
+#include <Terrain/include/OgreTerrain.h>
+#include <Terrain/include/OgreTerrainGroup.h>
+#include <Terrain/include/OgreTerrainMaterialGeneratorA.h>
 
 #include "PagedGeometry.h"
 #include "GrassLoader.h" 

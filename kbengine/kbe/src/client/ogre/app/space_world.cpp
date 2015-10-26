@@ -80,7 +80,7 @@ void SpaceWorld::addSpaceGeometryMapping(std::string respath)
 	if(mSceneProjectDir[mSceneProjectDir.size() - 1] != '\\' && mSceneProjectDir[mSceneProjectDir.size() - 1] != '/')
 		mSceneProjectDir += "\\";
 
-	mSceneProjectDir += std::string("spaces/") + respath + "/Scenes/Scene";
+	mSceneProjectDir += respath + "/Scenes/Scene";
 
 	loadSpaceGeometryMapping();
 }
