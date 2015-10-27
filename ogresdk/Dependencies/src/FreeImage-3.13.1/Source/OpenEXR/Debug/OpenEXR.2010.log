@@ -1,0 +1,101 @@
+﻿生成启动时间为 2015-10-25 0:27:55。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\OpenEXR.2010.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /I./IlmImf /I./Imath /I./Iex /I./Half /I./IlmThread /I../ZLib /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TP /wd4290 /analyze- /errorReport:prompt IlmImf\ImfAttribute.cpp IlmImf\ImfIntAttribute.cpp IlmImf\ImfOutputFile.cpp IlmImf\ImfPizCompressor.cpp IlmImf\ImfScanLineInputFile.cpp IlmImf\ImfStandardAttributes.cpp IlmImf\ImfTiledMisc.cpp IlmImf\ImfTiledOutputFile.cpp IlmImf\ImfTiledRgbaFile.cpp
+         ImfAttribute.cpp
+         ImfIntAttribute.cpp
+         ImfOutputFile.cpp
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imfoutputfile.cpp(1107): warning C4018: “<”: 有符号/无符号不匹配
+         ImfPizCompressor.cpp
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imfpizcompressor.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ImfScanLineInputFile.cpp
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imfscanlineinputfile.cpp(948): warning C4018: “<”: 有符号/无符号不匹配
+         ImfStandardAttributes.cpp
+         ImfTiledMisc.cpp
+         ImfTiledOutputFile.cpp
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imftiledoutputfile.cpp(1267): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imftiledoutputfile.cpp(1383): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imftiledoutputfile.cpp(1390): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmimf\imftiledoutputfile.cpp(1391): warning C4018: “<”: 有符号/无符号不匹配
+         ImfTiledRgbaFile.cpp
+         正在生成代码...
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\OpenEXR.lib" /NOLOGO .\Debug/ImfAttribute.obj
+         .\Debug/ImfB44Compressor.obj
+         .\Debug/ImfBoxAttribute.obj
+         .\Debug/ImfChannelList.obj
+         .\Debug/ImfChannelListAttribute.obj
+         .\Debug/ImfChromaticities.obj
+         .\Debug/ImfChromaticitiesAttribute.obj
+         .\Debug/ImfCompressionAttribute.obj
+         .\Debug/ImfCompressor.obj
+         .\Debug/ImfConvert.obj
+         .\Debug/ImfCRgbaFile.obj
+         .\Debug/ImfDoubleAttribute.obj
+         .\Debug/ImfEnvmap.obj
+         .\Debug/ImfEnvmapAttribute.obj
+         .\Debug/ImfFloatAttribute.obj
+         .\Debug/ImfFrameBuffer.obj
+         .\Debug/ImfFramesPerSecond.obj
+         .\Debug/ImfHeader.obj
+         .\Debug/ImfHuf.obj
+         .\Debug/ImfInputFile.obj
+         .\Debug/ImfIntAttribute.obj
+         .\Debug/ImfIO.obj
+         .\Debug/ImfKeyCode.obj
+         .\Debug/ImfKeyCodeAttribute.obj
+         .\Debug/ImfLineOrderAttribute.obj
+         .\Debug/ImfLut.obj
+         .\Debug/ImfMatrixAttribute.obj
+         .\Debug/ImfMisc.obj
+         .\Debug/ImfOpaqueAttribute.obj
+         .\Debug/ImfOutputFile.obj
+         .\Debug/ImfPizCompressor.obj
+         .\Debug/ImfPreviewImage.obj
+         .\Debug/ImfPreviewImageAttribute.obj
+         .\Debug/ImfPxr24Compressor.obj
+         .\Debug/ImfRational.obj
+         .\Debug/ImfRationalAttribute.obj
+         .\Debug/ImfRgbaFile.obj
+         .\Debug/ImfRgbaYca.obj
+         .\Debug/ImfRleCompressor.obj
+         .\Debug/ImfScanLineInputFile.obj
+         .\Debug/ImfStandardAttributes.obj
+         .\Debug/ImfStdIO.obj
+         .\Debug/ImfStringAttribute.obj
+         .\Debug/ImfTestFile.obj
+         .\Debug/ImfThreading.obj
+         .\Debug/ImfTileDescriptionAttribute.obj
+         .\Debug/ImfTiledInputFile.obj
+         .\Debug/ImfTiledMisc.obj
+         .\Debug/ImfTiledOutputFile.obj
+         .\Debug/ImfTiledRgbaFile.obj
+         .\Debug/ImfTileOffsets.obj
+         .\Debug/ImfTimeCode.obj
+         .\Debug/ImfTimeCodeAttribute.obj
+         .\Debug/ImfVecAttribute.obj
+         .\Debug/ImfVersion.obj
+         .\Debug/ImfWav.obj
+         .\Debug/ImfZipCompressor.obj
+         .\Debug/ImathBox.obj
+         .\Debug/ImathColorAlgo.obj
+         .\Debug/ImathFun.obj
+         .\Debug/ImathMatrixAlgo.obj
+         .\Debug/ImathRandom.obj
+         .\Debug/ImathShear.obj
+         .\Debug/ImathVec.obj
+         .\Debug/IexBaseExc.obj
+         .\Debug/IexThrowErrnoExc.obj
+         .\Debug/half.obj
+         .\Debug/IlmThread.obj
+         .\Debug/IlmThreadMutex.obj
+         .\Debug/IlmThreadPool.obj
+         .\Debug/IlmThreadSemaphore.obj
+     1>ImathShear.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+     1>ImathBox.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+         OpenEXR.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\.\Debug\OpenEXR.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\OpenEXR.2010.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:26.80

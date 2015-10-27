@@ -1,0 +1,107 @@
+﻿生成启动时间为 2015-10-25 0:28:22。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\FreeImageLib\FreeImageLib.2010.vcxproj”在节点 2 上(Build 个目标)。
+     1>Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\FreeImaged.lib" /NOLOGO .\Debug/BitmapAccess.obj
+         .\Debug/ColorLookup.obj
+         .\Debug/FreeImage.obj
+         .\Debug/FreeImageIO.obj
+         .\Debug/GetType.obj
+         .\Debug/MemoryIO.obj
+         .\Debug/PixelAccess.obj
+         .\Debug/NNQuantizer.obj
+         .\Debug/WuQuantizer.obj
+         .\Debug/Conversion.obj
+         .\Debug/Conversion16_555.obj
+         .\Debug/Conversion16_565.obj
+         .\Debug/Conversion24.obj
+         .\Debug/Conversion32.obj
+         .\Debug/Conversion4.obj
+         .\Debug/Conversion8.obj
+         .\Debug/ConversionRGBF.obj
+         .\Debug/ConversionType.obj
+         .\Debug/Halftoning.obj
+         .\Debug/tmoColorConvert.obj
+         .\Debug/tmoDrago03.obj
+         .\Debug/tmoFattal02.obj
+         .\Debug/tmoReinhard05.obj
+         .\Debug/ToneMapping.obj
+         .\Debug/J2KHelper.obj
+         .\Debug/Plugin.obj
+         .\Debug/PluginBMP.obj
+         .\Debug/PluginCUT.obj
+         .\Debug/PluginDDS.obj
+         .\Debug/PluginEXR.obj
+         .\Debug/PluginG3.obj
+         .\Debug/PluginGIF.obj
+         .\Debug/PluginHDR.obj
+         .\Debug/PluginICO.obj
+         .\Debug/PluginIFF.obj
+         .\Debug/PluginJ2K.obj
+         .\Debug/PluginJP2.obj
+         .\Debug/PluginJPEG.obj
+         .\Debug/PluginKOALA.obj
+         .\Debug/PluginMNG.obj
+         .\Debug/PluginPCD.obj
+         .\Debug/PluginPCX.obj
+         .\Debug/PluginPFM.obj
+         .\Debug/PluginPICT.obj
+         .\Debug/PluginPNG.obj
+         .\Debug/PluginPNM.obj
+         .\Debug/PluginPSD.obj
+         .\Debug/PluginRAS.obj
+         .\Debug/PluginRAW.obj
+         .\Debug/PluginSGI.obj
+         .\Debug/PluginTARGA.obj
+         .\Debug/PluginTIFF.obj
+         .\Debug/PluginWBMP.obj
+         .\Debug/PluginXBM.obj
+         .\Debug/PluginXPM.obj
+         .\Debug/PSDParser.obj
+         .\Debug/TIFFLogLuv.obj
+         .\Debug/Deprecated.obj
+         .\Debug/DeprecationMgr.obj
+         .\Debug/CacheFile.obj
+         .\Debug/MultiPage.obj
+         .\Debug/ZLibInterface.obj
+         .\Debug/Exif.obj
+         .\Debug/FIRational.obj
+         .\Debug/FreeImageTag.obj
+         .\Debug/IPTC.obj
+         .\Debug/TagConversion.obj
+         .\Debug/TagLib.obj
+         .\Debug/XTIFF.obj
+         .\Debug/Background.obj
+         .\Debug/BSplineRotate.obj
+         .\Debug/Channels.obj
+         .\Debug/ClassicRotate.obj
+         .\Debug/Colors.obj
+         .\Debug/CopyPaste.obj
+         .\Debug/Display.obj
+         .\Debug/Flip.obj
+         .\Debug/JPEGTransform.obj
+         .\Debug/MultigridPoissonSolver.obj
+         .\Debug/Rescale.obj
+         .\Debug/Resize.obj
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibJPEG\Debug\LibJPEG.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibMNG\Debug\LibMNG.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibOpenJPEG\Debug\LibOpenJPEG.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibPNG\Debug\LibPNG.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\Debug\LibRawLite.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibTIFF\Debug\LibTIFF.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\Debug\OpenEXR.lib"
+         "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\ZLib\Debug\ZLib.lib"
+     1>OpenEXR.lib(ImathBox.obj) : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+     1>OpenEXR.lib(ImathShear.obj) : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+         FreeImageLib.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\FreeImageLib\.\Debug\FreeImaged.lib
+       PostBuildEvent:
+         copy "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\FreeImageLib\Debug\FreeImaged.lib" "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\..\lib\Debug\" /y
+         copy "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\FreeImageLib\..\FreeImage.h" "D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\..\include" /y
+         
+         :VCEnd
+         已复制         1 个文件。
+         已复制         1 个文件。
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\FreeImageLib\FreeImageLib.2010.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:08.85

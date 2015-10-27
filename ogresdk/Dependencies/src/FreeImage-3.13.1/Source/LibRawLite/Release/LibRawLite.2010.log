@@ -1,0 +1,276 @@
+﻿生成启动时间为 2015-10-25 1:22:09。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\LibRawLite.2010.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D LIBRAW_NODLL /D NO_LCMS /D LIBRAW_LIBRARY_BUILD /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /GF /Gm- /EHsc /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt internal\dcraw_common.cpp internal\dcraw_fileio.cpp src\libraw_c_api.cpp src\libraw_cxx.cpp
+         dcraw_common.cpp
+     1>libraw/libraw_types.h(37): warning C4005: “NO_LCMS”: 宏重定义
+                 命令行参数: 参见前面的“NO_LCMS”定义
+     1>dcraw/dcraw.c(259): warning C4005: “LIBRAW_LIBRARY_BUILD”: 宏重定义
+                 命令行参数: 参见前面的“LIBRAW_LIBRARY_BUILD”定义
+     1>dcraw/dcraw.c(373): warning C4996: 'swab': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _swab. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(944) : 参见“swab”的声明
+     1>dcraw/dcraw.c(384): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(389): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(448): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(480): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(505): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(1139): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1166): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1370): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+     1>dcraw/dcraw.c(1403): warning C4804: “<<”: 在操作中使用类型“bool”不安全
+     1>dcraw/dcraw.c(1451): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1515): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1517): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1518): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(1526): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1534): warning C4244: “=”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(1537): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1542): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(1577): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(1581): warning C4244: “=”: 从“float”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(1585): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(1589): warning C4244: “=”: 从“float”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(1609): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(1614): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(1651): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(1658): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(1659): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(1668): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(1712): warning C4244: “return”: 从“UINT64”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(1718): warning C4244: “return”: 从“UINT64”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(1743): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(1926): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(2290): warning C4804: “<=”: 在操作中使用类型“bool”不安全
+     1>dcraw/dcraw.c(2815): warning C4018: “>=”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(3817): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3822): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3938): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>dcraw/dcraw.c(3954): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3960): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3965): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3978): warning C4244: “=”: 从“float”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(3982): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3996): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(3998): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4002): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(4038): warning C4018: “>”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4047): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4088): warning C4244: “/=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4088): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4102): warning C4244: “*=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(4117): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4117): warning C4244: “=”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(4118): warning C4018: “>”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4121): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4121): warning C4244: “=”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(4122): warning C4018: “>”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4127): warning C4244: “=”: 从“float”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(4184): warning C4018: “>=”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4184): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4195): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4287): warning C4309: “初始化”: 截断常量值
+     1>dcraw/dcraw.c(4478): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4479): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4483): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4484): warning C4244: “+=”: 从“const double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4545): warning C4244: “=”: 从“float”转换到“short”，可能丢失数据
+     1>dcraw/dcraw.c(4546): warning C4244: “=”: 从“float”转换到“short”，可能丢失数据
+     1>dcraw/dcraw.c(4547): warning C4244: “=”: 从“float”转换到“short”，可能丢失数据
+     1>dcraw/dcraw.c(4633): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>dcraw/dcraw.c(4636): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>dcraw/dcraw.c(4643): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(4656): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4664): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4666): warning C4244: “=”: 从“float”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(4687): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4688): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4688): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(4689): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4695): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4702): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4715): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(4719): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4731): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4738): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4746): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(4836): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(4841): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4879): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4881): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4883): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4894): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4895): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(4926): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5002): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5003): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5016): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5023): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5027): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5032): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5033): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5097): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5098): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5103): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5104): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5105): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5144): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>dcraw/dcraw.c(5149): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5241): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5246): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5250): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5251): warning C4244: “+=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5256): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5292): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5347): warning C4804: “<<”: 在操作中使用类型“bool”不安全
+     1>dcraw/dcraw.c(5413): warning C4018: “<=”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(5436): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(5448): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5451): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5454): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5465): warning C4244: “/=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5490): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5498): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5521): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5589): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(5591): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(5662): warning C4146: 一元负运算符应用于无符号类型，结果仍为无符号类型
+     1>dcraw/dcraw.c(5678): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5682): warning C4244: “/=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(5276): warning C4101: “sfp”: 未引用的局部变量
+     1>dcraw/dcraw.c(5712): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(5778): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(5781): warning C4018: “>”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(5952): warning C4244: “=”: 从“unsigned long”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(6000): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6001): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6002): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6006): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6020): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6031): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6047): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6158): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6162): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6270): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(6273): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(6352): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6353): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6356): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6899): warning C4309: “初始化”: 截断常量值
+     1>dcraw/dcraw.c(6913): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(6932): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>dcraw/dcraw.c(7052): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(7105): warning C4244: “=”: 从“unsigned int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(7173): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _strnicmp. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 12.0\VC\include\string.h(255) : 参见“strnicmp”的声明
+     1>dcraw/dcraw.c(7460): warning C4305: “*=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7461): warning C4305: “*=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7510): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7511): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7512): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7533): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7534): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7535): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7554): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7555): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7562): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7563): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7609): warning C4804: “>>”: 在操作中使用类型“bool”不安全
+     1>dcraw/dcraw.c(7672): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7673): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7680): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7681): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7689): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7690): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7710): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7711): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7718): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7719): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7727): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7780): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(7781): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8084): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8085): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8086): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8161): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8162): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8168): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8169): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8198): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8199): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8204): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8205): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8210): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8211): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8216): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8217): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8223): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8224): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8229): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8230): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8235): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8236): warning C4305: “=”: 从“double”到“float”截断
+     1>dcraw/dcraw.c(8442): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(8450): warning C4554: “|”: 检查运算符优先级可能存在的错误；使用圆括号阐明优先级
+     1>dcraw/dcraw.c(8459): warning C4244: “=”: 从“double”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(8461): warning C4018: “<”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(8467): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(8468): warning C4244: “+=”: 从“const double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(8518): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8519): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8529): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(8529): warning C4244: “=”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(8530): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(8530): warning C4244: “=”: 从“float”转换到“unsigned int”，可能丢失数据
+     1>dcraw/dcraw.c(8531): warning C4018: “>”: 有符号/无符号不匹配
+     1>dcraw/dcraw.c(8538): warning C4244: “=”: 从“float”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8564): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8568): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8572): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8576): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8580): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8584): warning C4244: “=”: 从“double”转换到“ushort”，可能丢失数据
+     1>dcraw/dcraw.c(8609): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8618): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+     1>dcraw/dcraw.c(8624): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8717): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8736): warning C4244: “*=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8737): warning C4244: “*=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8738): warning C4244: “*=”: 从“float”转换到“int”，可能丢失数据
+     1>dcraw/dcraw.c(8770): warning C4101: “th”: 未引用的局部变量
+     1>dcraw/dcraw.c(8769): warning C4101: “exif”: 未引用的局部变量
+     1>dcraw/dcraw.c(8830): warning C4996: 'swab': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _swab. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 12.0\VC\include\stdlib.h(944) : 参见“swab”的声明
+         dcraw_fileio.cpp
+     1>libraw/libraw_types.h(37): warning C4005: “NO_LCMS”: 宏重定义
+                 命令行参数: 参见前面的“NO_LCMS”定义
+     1>dcraw/dcraw.c(3623): warning C4005: “LIBRAW_LIBRARY_BUILD”: 宏重定义
+                 命令行参数: 参见前面的“LIBRAW_LIBRARY_BUILD”定义
+     1>dcraw/dcraw.c(3640): warning C4101: “len”: 未引用的局部变量
+         libraw_c_api.cpp
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\librawlite\libraw\libraw_types.h(37): warning C4005: “NO_LCMS”: 宏重定义
+                 命令行参数: 参见前面的“NO_LCMS”定义
+         libraw_cxx.cpp
+     1>src\libraw_cxx.cpp(31): warning C4005: “LIBRAW_LIBRARY_BUILD”: 宏重定义
+                 命令行参数: 参见前面的“LIBRAW_LIBRARY_BUILD”定义
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\librawlite\libraw\libraw_types.h(37): warning C4005: “NO_LCMS”: 宏重定义
+                 命令行参数: 参见前面的“NO_LCMS”定义
+     1>src\libraw_cxx.cpp(96): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>src\libraw_cxx.cpp(177): warning C4305: “=”: 从“double”到“float”截断
+     1>src\libraw_cxx.cpp(407): warning C4244: “*=”: 从“double”转换到“ushort”，可能丢失数据
+     1>src\libraw_cxx.cpp(818): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>src\libraw_cxx.cpp(856): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>src\libraw_cxx.cpp(864): warning C4244: “*=”: 从“float”转换到“int”，可能丢失数据
+     1>src\libraw_cxx.cpp(882): warning C4305: “初始化”: 从“double”到“float”截断
+         正在生成代码...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1354,5): warning MSB8012: TargetPath(D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\Release\LibRawLite.lib) does not match the Library's OutputFile property value (D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\Release\LibRawLite.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Release\LibRawLite.lib" /NOLOGO /LTCG Release\dcraw_common.obj
+         Release\dcraw_fileio.obj
+         Release\libraw_c_api.obj
+         Release\libraw_cxx.obj
+         LibRawLite.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\Release\LibRawLite.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\LibRawLite.2010.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:37.34

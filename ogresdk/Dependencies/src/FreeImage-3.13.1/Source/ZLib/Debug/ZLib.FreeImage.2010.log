@@ -1,0 +1,38 @@
+﻿生成启动时间为 2015-10-25 0:22:46。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\ZLib\ZLib.FreeImage.2010.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TC /analyze- /errorReport:prompt adler32.c compress.c crc32.c deflate.c gzio.c infback.c inffast.c inflate.c inftrees.c trees.c uncompr.c zutil.c
+         adler32.c
+         compress.c
+         crc32.c
+         deflate.c
+         gzio.c
+         infback.c
+         inffast.c
+         inflate.c
+         inftrees.c
+         trees.c
+         uncompr.c
+         zutil.c
+         正在生成代码...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1354,5): warning MSB8012: TargetPath(D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\ZLib\.\Debug\ZLib-freeImage.lib) does not match the Library's OutputFile property value (D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\ZLib\Debug\ZLib.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1356,5): warning MSB8012: TargetName(ZLib-freeImage) does not match the Library's OutputFile property value (ZLib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\ZLib.lib" /NOLOGO .\Debug/adler32.obj
+         .\Debug/compress.obj
+         .\Debug/crc32.obj
+         .\Debug/deflate.obj
+         .\Debug/gzio.obj
+         .\Debug/infback.obj
+         .\Debug/inffast.obj
+         .\Debug/inflate.obj
+         .\Debug/inftrees.obj
+         .\Debug/trees.obj
+         .\Debug/uncompr.obj
+         .\Debug/zutil.obj
+         ZLib.FreeImage.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\ZLib\.\Debug\ZLib-freeImage.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\ZLib\ZLib.FreeImage.2010.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:03.14

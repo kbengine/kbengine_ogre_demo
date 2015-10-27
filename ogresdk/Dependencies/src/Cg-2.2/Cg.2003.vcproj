@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="windows-1255"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="Cg"
+	ProjectGUID="{37206450-1118-4368-B904-62EB242BDE31}"
+	Keyword="MakeFileProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="10">
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="copy &quot;$(ProjectDir)bin\cg.dll&quot; &quot;$(SolutionDir)..\bin\$(ConfigurationName)&quot; /y
+copy &quot;$(ProjectDir)lib\cg.lib&quot; &quot;$(SolutionDir)..\lib\$(ConfigurationName)\&quot; /y
+mkdir &quot;$(SolutionDir)..\include\cg&quot;
+copy &quot;$(ProjectDir)include\Cg\*.*&quot; &quot;$(SolutionDir)..\include\cg&quot; /y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory="$(ConfigurationName)"
+			IntermediateDirectory="$(ConfigurationName)"
+			ConfigurationType="10">
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCMIDLTool"/>
+			<Tool
+				Name="VCPostBuildEventTool"
+				CommandLine="copy &quot;$(ProjectDir)bin\cg.dll&quot; &quot;$(SolutionDir)..\bin\$(ConfigurationName)&quot; /y
+copy &quot;$(ProjectDir)lib\cg.lib&quot; &quot;$(SolutionDir)..\lib\$(ConfigurationName)\&quot; /y
+mkdir &quot;$(SolutionDir)..\include\cg&quot;
+copy &quot;$(ProjectDir)include\Cg\*.*&quot; &quot;$(SolutionDir)..\include\cg&quot; /y
+"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Dll Files"
+			Filter="cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx"
+			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}">
+			<File
+				RelativePath=".\bin\cg.dll">
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl;inc;xsd"
+			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}">
+			<File
+				RelativePath=".\include\Cg\cg.h">
+			</File>
+			<File
+				RelativePath=".\include\Cg\cg_bindlocations.h">
+			</File>
+			<File
+				RelativePath=".\include\Cg\cg_datatypes.h">
+			</File>
+			<File
+				RelativePath=".\include\Cg\cg_enums.h">
+			</File>
+			<File
+				RelativePath=".\include\Cg\cg_errors.h">
+			</File>
+			<File
+				RelativePath=".\include\Cg\cg_profiles.h">
+			</File>
+			<File
+				RelativePath=".\include\Cg\cgGL_profiles.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Lib Files"
+			Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav"
+			UniqueIdentifier="{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}">
+			<File
+				RelativePath=".\lib\cg.lib">
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\license.txt">
+		</File>
+		<File
+			RelativePath=".\readme.txt">
+		</File>
+	</Files>
+	<Globals>
+	</Globals>
+</VisualStudioProject>

@@ -1,0 +1,46 @@
+﻿生成启动时间为 2015-10-25 0:22:30。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibPNG\LibPNG.2010.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\zlib /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug/" /Fd".\Debug/vc120.pdb" /Gd /TC /analyze- /errorReport:prompt png.c pngerror.c pnggccrd.c pngget.c pngmem.c pngpread.c pngread.c pngrio.c pngrtran.c pngrutil.c pngset.c pngtrans.c pngvcrd.c pngwio.c pngwrite.c pngwtran.c pngwutil.c
+         png.c
+         pngerror.c
+         pnggccrd.c
+         pngget.c
+         pngmem.c
+         pngpread.c
+         pngread.c
+         pngrio.c
+         pngrtran.c
+         pngrutil.c
+         pngset.c
+         pngtrans.c
+         pngvcrd.c
+         pngwio.c
+         pngwrite.c
+         pngwtran.c
+         pngwutil.c
+         正在生成代码...
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\LibPNG.lib" /NOLOGO .\Debug/png.obj
+         .\Debug/pngerror.obj
+         .\Debug/pnggccrd.obj
+         .\Debug/pngget.obj
+         .\Debug/pngmem.obj
+         .\Debug/pngpread.obj
+         .\Debug/pngread.obj
+         .\Debug/pngrio.obj
+         .\Debug/pngrtran.obj
+         .\Debug/pngrutil.obj
+         .\Debug/pngset.obj
+         .\Debug/pngtrans.obj
+         .\Debug/pngvcrd.obj
+         .\Debug/pngwio.obj
+         .\Debug/pngwrite.obj
+         .\Debug/pngwtran.obj
+         .\Debug/pngwutil.obj
+         LibPNG.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibPNG\.\Debug\LibPNG.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibPNG\LibPNG.2010.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.35

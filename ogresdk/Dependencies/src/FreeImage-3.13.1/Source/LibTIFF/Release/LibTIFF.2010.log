@@ -1,0 +1,89 @@
+﻿生成启动时间为 2015-10-25 1:22:43。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibTIFF\LibTIFF.2010.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\libtiff\libtiff /I..\zlib /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MD /GS- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TC /analyze- /errorReport:prompt tif_aux.c tif_close.c tif_codec.c tif_color.c tif_compress.c tif_dir.c tif_dirinfo.c tif_dirread.c tif_dirwrite.c tif_dumpmode.c tif_error.c tif_extension.c tif_fax3.c tif_fax3sm.c tif_flush.c tif_getimage.c tif_jpeg.c tif_luv.c tif_lzw.c tif_next.c tif_ojpeg.c tif_open.c tif_packbits.c tif_pixarlog.c tif_predict.c tif_print.c tif_read.c tif_strip.c tif_swab.c tif_thunder.c tif_tile.c tif_version.c tif_warning.c tif_write.c tif_zip.c
+         tif_aux.c
+         tif_close.c
+         tif_codec.c
+         tif_color.c
+         tif_compress.c
+         tif_dir.c
+         tif_dirinfo.c
+     1>tif_dirinfo.c(799): warning C4996: '_lfind': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _lfind. See online help for details.
+                 E:\Program Files\Microsoft Visual Studio 12.0\VC\include\search.h(53) : 参见“_lfind”的声明
+         tif_dirread.c
+         tif_dirwrite.c
+         tif_dumpmode.c
+         tif_error.c
+         tif_extension.c
+         tif_fax3.c
+         tif_fax3sm.c
+         tif_flush.c
+         tif_getimage.c
+         tif_jpeg.c
+         tif_luv.c
+         tif_lzw.c
+         tif_next.c
+         正在生成代码...
+         正在编译...
+         tif_ojpeg.c
+     1>tif_ojpeg.c(651): warning C4244: “=”: 从“tsample_t”转换到“uint8”，可能丢失数据
+     1>tif_ojpeg.c(1009): warning C4244: “=”: 从“uint16”转换到“uint8”，可能丢失数据
+         tif_open.c
+         tif_packbits.c
+         tif_pixarlog.c
+         tif_predict.c
+         tif_print.c
+         tif_read.c
+         tif_strip.c
+         tif_swab.c
+         tif_thunder.c
+         tif_tile.c
+         tif_version.c
+         tif_warning.c
+         tif_write.c
+     1>tif_write.c(633): warning C4018: “>=”: 有符号/无符号不匹配
+         tif_zip.c
+         正在生成代码...
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Release\LibTIFF.lib" /NOLOGO .\Release/tif_aux.obj
+         .\Release/tif_close.obj
+         .\Release/tif_codec.obj
+         .\Release/tif_color.obj
+         .\Release/tif_compress.obj
+         .\Release/tif_dir.obj
+         .\Release/tif_dirinfo.obj
+         .\Release/tif_dirread.obj
+         .\Release/tif_dirwrite.obj
+         .\Release/tif_dumpmode.obj
+         .\Release/tif_error.obj
+         .\Release/tif_extension.obj
+         .\Release/tif_fax3.obj
+         .\Release/tif_fax3sm.obj
+         .\Release/tif_flush.obj
+         .\Release/tif_getimage.obj
+         .\Release/tif_jpeg.obj
+         .\Release/tif_luv.obj
+         .\Release/tif_lzw.obj
+         .\Release/tif_next.obj
+         .\Release/tif_ojpeg.obj
+         .\Release/tif_open.obj
+         .\Release/tif_packbits.obj
+         .\Release/tif_pixarlog.obj
+         .\Release/tif_predict.obj
+         .\Release/tif_print.obj
+         .\Release/tif_read.obj
+         .\Release/tif_strip.obj
+         .\Release/tif_swab.obj
+         .\Release/tif_thunder.obj
+         .\Release/tif_tile.obj
+         .\Release/tif_version.obj
+         .\Release/tif_warning.obj
+         .\Release/tif_write.obj
+         .\Release/tif_zip.obj
+         LibTIFF.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibTIFF\.\Release\LibTIFF.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibTIFF\LibTIFF.2010.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:26.27

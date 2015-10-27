@@ -1,0 +1,21 @@
+﻿生成启动时间为 2015-10-25 0:22:37。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\LibRawLite.2010.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /ZI /nologo /W0 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _CRT_SECURE_NO_WARNINGS /D LIBRAW_NODLL /D LIBRAW_LIBRARY_BUILD /D NO_LCMS /D _VC80_UPGRADE=0x0710 /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt internal\dcraw_common.cpp internal\dcraw_fileio.cpp src\libraw_c_api.cpp src\libraw_cxx.cpp
+         libraw_cxx.cpp
+         libraw_c_api.cpp
+         dcraw_fileio.cpp
+         dcraw_common.cpp
+         正在生成代码...
+     1>C:\Program Files\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(1354,5): warning MSB8012: TargetPath(D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\Debug\LibRawLite.lib) does not match the Library's OutputFile property value (D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\Debug\LibRawLite.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Debug\LibRawLite.lib" /NOLOGO Debug\dcraw_common.obj
+         Debug\dcraw_fileio.obj
+         Debug\libraw_c_api.obj
+         Debug\libraw_cxx.obj
+         LibRawLite.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\Debug\LibRawLite.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\LibRawLite\LibRawLite.2010.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:09.19

@@ -1,0 +1,249 @@
+﻿生成启动时间为 2015-10-25 1:22:47。
+     1>项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\OpenEXR.2010.vcxproj”在节点 3 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I./ /I./IlmImf /I./Imath /I./Iex /I./Half /I./IlmThread /I../ZLib /Zi /nologo /W3 /WX- /O2 /Ob2 /Oi /Ot /Oy /D WIN32 /D NDEBUG /D _LIB /D _CRT_SECURE_NO_DEPRECATE /D _VC80_UPGRADE=0x0710 /D _MBCS /GF /Gm- /EHsc /MD /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo".\Release/" /Fd".\Release/vc120.pdb" /Gd /TP /wd4290 /analyze- /errorReport:prompt IlmImf\ImfAttribute.cpp IlmImf\ImfB44Compressor.cpp IlmImf\ImfBoxAttribute.cpp IlmImf\ImfChannelList.cpp IlmImf\ImfChannelListAttribute.cpp IlmImf\ImfChromaticities.cpp IlmImf\ImfChromaticitiesAttribute.cpp IlmImf\ImfCompressionAttribute.cpp IlmImf\ImfCompressor.cpp IlmImf\ImfConvert.cpp IlmImf\ImfCRgbaFile.cpp IlmImf\ImfDoubleAttribute.cpp IlmImf\ImfEnvmap.cpp IlmImf\ImfEnvmapAttribute.cpp IlmImf\ImfFloatAttribute.cpp IlmImf\ImfFrameBuffer.cpp IlmImf\ImfFramesPerSecond.cpp IlmImf\ImfHeader.cpp IlmImf\ImfHuf.cpp IlmImf\ImfInputFile.cpp IlmImf\ImfIntAttribute.cpp IlmImf\ImfIO.cpp IlmImf\ImfKeyCode.cpp IlmImf\ImfKeyCodeAttribute.cpp IlmImf\ImfLineOrderAttribute.cpp IlmImf\ImfLut.cpp IlmImf\ImfMatrixAttribute.cpp IlmImf\ImfMisc.cpp IlmImf\ImfOpaqueAttribute.cpp IlmImf\ImfOutputFile.cpp IlmImf\ImfPizCompressor.cpp IlmImf\ImfPreviewImage.cpp IlmImf\ImfPreviewImageAttribute.cpp IlmImf\ImfPxr24Compressor.cpp IlmImf\ImfRational.cpp IlmImf\ImfRationalAttribute.cpp IlmImf\ImfRgbaFile.cpp IlmImf\ImfRgbaYca.cpp IlmImf\ImfRleCompressor.cpp IlmImf\ImfScanLineInputFile.cpp IlmImf\ImfStandardAttributes.cpp IlmImf\ImfStdIO.cpp IlmImf\ImfStringAttribute.cpp IlmImf\ImfTestFile.cpp IlmImf\ImfThreading.cpp IlmImf\ImfTileDescriptionAttribute.cpp IlmImf\ImfTiledInputFile.cpp IlmImf\ImfTiledMisc.cpp IlmImf\ImfTiledOutputFile.cpp IlmImf\ImfTiledRgbaFile.cpp IlmImf\ImfTileOffsets.cpp IlmImf\ImfTimeCode.cpp IlmImf\ImfTimeCodeAttribute.cpp IlmImf\ImfVecAttribute.cpp IlmImf\ImfVersion.cpp IlmImf\ImfWav.cpp IlmImf\ImfZipCompressor.cpp Imath\ImathBox.cpp Imath\ImathColorAlgo.cpp Imath\ImathFun.cpp Imath\ImathMatrixAlgo.cpp Imath\ImathRandom.cpp Imath\ImathShear.cpp Imath\ImathVec.cpp Iex\IexBaseExc.cpp Iex\IexThrowErrnoExc.cpp Half\half.cpp IlmThread\IlmThread.cpp IlmThread\IlmThreadMutex.cpp IlmThread\IlmThreadPool.cpp IlmThread\IlmThreadSemaphore.cpp
+         ImfAttribute.cpp
+         ImfB44Compressor.cpp
+     1>IlmImf\ImfB44Compressor.cpp(322): warning C4244: “=”: 从“unsigned short”转换到“unsigned char”，可能丢失数据
+     1>IlmImf\ImfB44Compressor.cpp(343): warning C4244: “=”: 从“unsigned short”转换到“unsigned char”，可能丢失数据
+         ImfBoxAttribute.cpp
+         ImfChannelList.cpp
+         ImfChannelListAttribute.cpp
+         ImfChromaticities.cpp
+         ImfChromaticitiesAttribute.cpp
+         ImfCompressionAttribute.cpp
+         ImfCompressor.cpp
+         ImfConvert.cpp
+     1>IlmImf\ImfConvert.cpp(119): warning C4244: “参数”: 从“unsigned int”转换到“float”，可能丢失数据
+         ImfCRgbaFile.cpp
+     1>IlmImf\ImfCRgbaFile.cpp(292): warning C4244: “=”: 从“const int”转换到“float”，可能丢失数据
+     1>IlmImf\ImfCRgbaFile.cpp(293): warning C4244: “=”: 从“const int”转换到“float”，可能丢失数据
+         ImfDoubleAttribute.cpp
+         ImfEnvmap.cpp
+     1>IlmImf\ImfEnvmap.cpp(77): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfEnvmap.cpp(88): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfEnvmap.cpp(102): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfEnvmap.cpp(103): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+         ImfEnvmapAttribute.cpp
+         ImfFloatAttribute.cpp
+         ImfFrameBuffer.cpp
+         ImfFramesPerSecond.cpp
+         ImfHeader.cpp
+     1>IlmImf\ImfHeader.cpp(582): warning C4305: “初始化”: 从“double”到“const float”截断
+     1>IlmImf\ImfHeader.cpp(627): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfHeader.cpp(634): warning C4018: “<”: 有符号/无符号不匹配
+         ImfHuf.cpp
+     1>IlmImf\ImfHuf.cpp(168): warning C4244: “=”: 从“Imath::Int64”转换到“char”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(247): warning C4244: “初始化”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(478): warning C4244: “初始化”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(547): warning C4244: “初始化”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(559): warning C4244: “初始化”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(606): warning C4244: “初始化”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(709): warning C4244: “参数”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(877): warning C4244: “初始化”: 从“Imath::Int64”转换到“unsigned char”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(892): warning C4244: “初始化”: 从“Imath::Int64”转换到“int”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(907): warning C4244: “初始化”: 从“Imath::Int64”转换到“unsigned char”，可能丢失数据
+     1>IlmImf\ImfHuf.cpp(934): warning C4244: “初始化”: 从“Imath::Int64”转换到“unsigned char”，可能丢失数据
+         ImfInputFile.cpp
+     1>IlmImf\ImfInputFile.cpp(296): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+         正在编译...
+         ImfIntAttribute.cpp
+         ImfIO.cpp
+         ImfKeyCode.cpp
+         ImfKeyCodeAttribute.cpp
+         ImfLineOrderAttribute.cpp
+         ImfLut.cpp
+     1>IlmImf\ImfLut.cpp(155): warning C4244: “初始化”: 从“double”转换到“const float”，可能丢失数据
+     1>IlmImf\ImfLut.cpp(173): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         ImfMatrixAttribute.cpp
+         ImfMisc.cpp
+     1>IlmImf\ImfMisc.cpp(141): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(221): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfMisc.cpp(567): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(576): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(585): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(717): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(724): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(731): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(751): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(762): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfMisc.cpp(771): warning C4018: “<”: 有符号/无符号不匹配
+         ImfOpaqueAttribute.cpp
+         ImfOutputFile.cpp
+     1>IlmImf\ImfOutputFile.cpp(1107): warning C4018: “<”: 有符号/无符号不匹配
+         ImfPizCompressor.cpp
+     1>IlmImf\ImfPizCompressor.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ImfPreviewImage.cpp
+         ImfPreviewImageAttribute.cpp
+         ImfPxr24Compressor.cpp
+     1>IlmImf\ImfPxr24Compressor.cpp(460): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfPxr24Compressor.cpp(486): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfPxr24Compressor.cpp(510): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfPxr24Compressor.cpp(535): warning C4018: “<”: 有符号/无符号不匹配
+         ImfRational.cpp
+         ImfRationalAttribute.cpp
+         ImfRgbaFile.cpp
+         ImfRgbaYca.cpp
+     1>IlmImf\ImfRgbaYca.cpp(161): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(177): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(209): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(225): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(284): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(299): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(333): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>IlmImf\ImfRgbaYca.cpp(348): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         ImfRleCompressor.cpp
+     1>IlmImf\ImfRleCompressor.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ImfScanLineInputFile.cpp
+     1>IlmImf\ImfScanLineInputFile.cpp(948): warning C4018: “<”: 有符号/无符号不匹配
+         正在生成代码...
+         正在编译...
+         ImfStandardAttributes.cpp
+         ImfStdIO.cpp
+         ImfStringAttribute.cpp
+         ImfTestFile.cpp
+         ImfThreading.cpp
+         ImfTileDescriptionAttribute.cpp
+         ImfTiledInputFile.cpp
+     1>IlmImf\ImfTiledInputFile.cpp(1029): warning C4018: “<”: 有符号/无符号不匹配
+         ImfTiledMisc.cpp
+         ImfTiledOutputFile.cpp
+     1>IlmImf\ImfTiledOutputFile.cpp(1267): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfTiledOutputFile.cpp(1383): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfTiledOutputFile.cpp(1390): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfTiledOutputFile.cpp(1391): warning C4018: “<”: 有符号/无符号不匹配
+         ImfTiledRgbaFile.cpp
+         ImfTileOffsets.cpp
+     1>IlmImf\ImfTileOffsets.cpp(80): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(82): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(262): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(263): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(274): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(275): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(276): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(287): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(288): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmImf\ImfTileOffsets.cpp(289): warning C4018: “>”: 有符号/无符号不匹配
+         ImfTimeCode.cpp
+     1>IlmImf\ImfTimeCode.cpp(236): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>IlmImf\ImfTimeCode.cpp(250): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>IlmImf\ImfTimeCode.cpp(264): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>IlmImf\ImfTimeCode.cpp(278): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>IlmImf\ImfTimeCode.cpp(292): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+     1>IlmImf\ImfTimeCode.cpp(306): warning C4800: “unsigned int”: 将值强制为布尔值“true”或“false”(性能警告)
+         ImfTimeCodeAttribute.cpp
+         ImfVecAttribute.cpp
+         ImfVersion.cpp
+         ImfWav.cpp
+         ImfZipCompressor.cpp
+     1>IlmImf\ImfZipCompressor.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         ImathBox.cpp
+         ImathColorAlgo.cpp
+         ImathFun.cpp
+         正在生成代码...
+         正在编译...
+         ImathMatrixAlgo.cpp
+         ImathRandom.cpp
+     1>Imath\ImathRandom.cpp(94): warning C4244: “=”: 从“Imath::Int64”转换到“unsigned short”，可能丢失数据
+     1>Imath\ImathRandom.cpp(95): warning C4244: “=”: 从“Imath::Int64”转换到“unsigned short”，可能丢失数据
+     1>Imath\ImathRandom.cpp(96): warning C4244: “=”: 从“Imath::Int64”转换到“unsigned short”，可能丢失数据
+     1>Imath\ImathRandom.cpp(166): warning C4244: “=”: 从“long”转换到“unsigned short”，可能丢失数据
+         ImathShear.cpp
+         ImathVec.cpp
+     1>Imath\ImathVec.cpp(179): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+     1>Imath\ImathVec.cpp(317): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+         IexBaseExc.cpp
+         IexThrowErrnoExc.cpp
+         half.cpp
+         IlmThread.cpp
+         IlmThreadMutex.cpp
+         IlmThreadPool.cpp
+     1>IlmThread\IlmThreadPool.cpp(250): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmThread\IlmThreadPool.cpp(367): warning C4018: “>”: 有符号/无符号不匹配
+     1>IlmThread\IlmThreadPool.cpp(373): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmThread\IlmThreadPool.cpp(379): warning C4018: “<”: 有符号/无符号不匹配
+     1>IlmThread\IlmThreadPool.cpp(392): warning C4018: “<”: 有符号/无符号不匹配
+         IlmThreadSemaphore.cpp
+         正在生成代码...
+     1>d:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\dependencies\src\freeimage-3.13.1\source\openexr\ilmthread\ilmthread.cpp(68): warning C4722: “IlmThread::Thread::~Thread”: 析构函数永远不会返回，可能会发生内存泄漏
+       Lib:
+         E:\Program Files\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:".\Release\OpenEXR.lib" /NOLOGO .\Release/ImfAttribute.obj
+         .\Release/ImfB44Compressor.obj
+         .\Release/ImfBoxAttribute.obj
+         .\Release/ImfChannelList.obj
+         .\Release/ImfChannelListAttribute.obj
+         .\Release/ImfChromaticities.obj
+         .\Release/ImfChromaticitiesAttribute.obj
+         .\Release/ImfCompressionAttribute.obj
+         .\Release/ImfCompressor.obj
+         .\Release/ImfConvert.obj
+         .\Release/ImfCRgbaFile.obj
+         .\Release/ImfDoubleAttribute.obj
+         .\Release/ImfEnvmap.obj
+         .\Release/ImfEnvmapAttribute.obj
+         .\Release/ImfFloatAttribute.obj
+         .\Release/ImfFrameBuffer.obj
+         .\Release/ImfFramesPerSecond.obj
+         .\Release/ImfHeader.obj
+         .\Release/ImfHuf.obj
+         .\Release/ImfInputFile.obj
+         .\Release/ImfIntAttribute.obj
+         .\Release/ImfIO.obj
+         .\Release/ImfKeyCode.obj
+         .\Release/ImfKeyCodeAttribute.obj
+         .\Release/ImfLineOrderAttribute.obj
+         .\Release/ImfLut.obj
+         .\Release/ImfMatrixAttribute.obj
+         .\Release/ImfMisc.obj
+         .\Release/ImfOpaqueAttribute.obj
+         .\Release/ImfOutputFile.obj
+         .\Release/ImfPizCompressor.obj
+         .\Release/ImfPreviewImage.obj
+         .\Release/ImfPreviewImageAttribute.obj
+         .\Release/ImfPxr24Compressor.obj
+         .\Release/ImfRational.obj
+         .\Release/ImfRationalAttribute.obj
+         .\Release/ImfRgbaFile.obj
+         .\Release/ImfRgbaYca.obj
+         .\Release/ImfRleCompressor.obj
+         .\Release/ImfScanLineInputFile.obj
+         .\Release/ImfStandardAttributes.obj
+         .\Release/ImfStdIO.obj
+         .\Release/ImfStringAttribute.obj
+         .\Release/ImfTestFile.obj
+         .\Release/ImfThreading.obj
+         .\Release/ImfTileDescriptionAttribute.obj
+         .\Release/ImfTiledInputFile.obj
+         .\Release/ImfTiledMisc.obj
+         .\Release/ImfTiledOutputFile.obj
+         .\Release/ImfTiledRgbaFile.obj
+         .\Release/ImfTileOffsets.obj
+         .\Release/ImfTimeCode.obj
+         .\Release/ImfTimeCodeAttribute.obj
+         .\Release/ImfVecAttribute.obj
+         .\Release/ImfVersion.obj
+         .\Release/ImfWav.obj
+         .\Release/ImfZipCompressor.obj
+         .\Release/ImathBox.obj
+         .\Release/ImathColorAlgo.obj
+         .\Release/ImathFun.obj
+         .\Release/ImathMatrixAlgo.obj
+         .\Release/ImathRandom.obj
+         .\Release/ImathShear.obj
+         .\Release/ImathVec.obj
+         .\Release/IexBaseExc.obj
+         .\Release/IexThrowErrnoExc.obj
+         .\Release/half.obj
+         .\Release/IlmThread.obj
+         .\Release/IlmThreadMutex.obj
+         .\Release/IlmThreadPool.obj
+         .\Release/IlmThreadSemaphore.obj
+     1>ImathShear.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+     1>ImathBox.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+         OpenEXR.2010.vcxproj -> D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\.\Release\OpenEXR.lib
+     1>已完成生成项目“D:\kbe\kbengine_ogre_demo\ogresdk\ogre_src_v1-8-1\Dependencies\src\FreeImage-3.13.1\Source\OpenEXR\OpenEXR.2010.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:03:13.98
