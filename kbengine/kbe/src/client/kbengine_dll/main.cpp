@@ -493,15 +493,16 @@ void kbe_fireEvent(const char *eventID, PyObject *args)
 //-------------------------------------------------------------------------------------
 void kbe_updateVolatile(KBEngine::ENTITY_ID eid, float x, float y, float z, float yaw, float pitch, float roll)
 {
-	//client::Entity* pEntity = g_pApp->pPlayer();
-	//if(pEntity == NULL)
-	//	return;
+	client::Entity* pEntity = g_pApp->pPlayer();
+	if(pEntity == NULL)
+		return;
 
-	g_pApp->setPlayerPosition(x, y, z);
-	g_pApp->setPlayerDirection(roll, pitch, yaw);
+	pEntity->clientPos(x, y, z);
+	pEntity->clientDir(roll, pitch, yaw);
 
 	if(eid >= 0)
 		targetID = eid;
+
 	//g_pApp->setTargetID(eid);
 }
 
