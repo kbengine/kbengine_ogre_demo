@@ -104,6 +104,7 @@ void EntitySimple::setupBody(SceneManager* sceneMgr)
 		modelName_ = "ogrehead.mesh";
 
 	KBEntity::setupBody(sceneMgr);
+	scale(mScale);
 }
 
 //-------------------------------------------------------------------------------------
@@ -159,7 +160,7 @@ void EntitySimple::setupAnimations()
 //-------------------------------------------------------------------------------------
 void EntitySimple::playAnimation(Ogre::String name)
 {
-	if(modelName_ == "ogrehead.mesh")
+	if (modelName_ == "" || modelName_ == "ogrehead.mesh")
 		return;
 
 	if(name != "Die" && mState == 1)

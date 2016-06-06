@@ -521,7 +521,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 				break;
 			}
 
-			pEntity->setup(mSceneMgr);
+			//pEntity->setup(mSceneMgr);
 
 			pEntity->setPosition(pEventData_EnterWorld->x, pEventData_EnterWorld->y, pEventData_EnterWorld->z);
 			pEntity->setDestPosition(pEventData_EnterWorld->x, pEventData_EnterWorld->y, pEventData_EnterWorld->z);
@@ -546,7 +546,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 			
 			KBEntity* pEntity = iter->second.get();
 
-			pEntity->setup(mSceneMgr);
+			//pEntity->setup(mSceneMgr);
 
 			pEntity->setPosition(pEventData_EnterSpace->x, pEventData_EnterSpace->y, pEventData_EnterSpace->z);
 			pEntity->setDestPosition(pEventData_EnterSpace->x, pEventData_EnterSpace->y, pEventData_EnterSpace->z);
@@ -705,6 +705,7 @@ void SpaceWorld::kbengine_onEvent(const KBEngine::EventData* lpEventData)
 
 					uint32 modelID = root[1].asUInt();		
 					pEntity->setModelID(modelID);
+					pEntity->setup(mSceneMgr);
 				}
 				else if(peventdata->name == "set_state")
 				{
