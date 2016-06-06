@@ -22,6 +22,7 @@
 		<debug_type>0</debug_type>
 		<use_logfile>false</use_logfile>
 		<disables>
+			<item>Encrypted::packet</item>
 			<item>Baseapp::onUpdateDataFromClient</item>
 			<item>Client::onUpdateVolatileData</item>
 			<item>Client::onUpdateData</item>
