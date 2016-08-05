@@ -123,7 +123,7 @@
 		<default_layer> python </default_layer>
 	</telnet_service>
 		
-	<entryScriptFile> kbengine </entryScriptFile>
+	<entryScriptFile> kbemain </entryScriptFile>
 	
 	<useLastAccountName>false</useLastAccountName>
 	<accountName>kbengine</accountName>
