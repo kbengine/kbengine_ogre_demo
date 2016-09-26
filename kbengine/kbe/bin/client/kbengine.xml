@@ -72,45 +72,41 @@
 		<script_version> 0.1.0 </script_version>
 	</publish>
 	
-	<channelCommon> 
-		<!-- 频道最后一次通信时间超过此时间则被认定为超时通道， 服务器将踢出该频道 -->
-		<timeout> 
-			<internal> 60.0 </internal>
-			<external> 60.0 </external>
-		</timeout>
-		
-		<!-- 通道send数据重试时间次数 -->
-		<resend> 
-			<internal> 
-				<interval> 10 </interval>					<!-- 毫秒 -->
-				<retries> 0 </retries>						<!-- 重试次数, 0无限 -->
-			</internal>
-			<external>
-				<interval> 10 </interval>					<!-- 毫秒 -->
-				<retries> 3 </retries>						<!-- 重试次数, 0无限 -->
-			</external>
-		</resend>
-		
-		<!-- 一个游戏周期channel接收窗口溢出值 0无限制-->
-		<receiveWindowOverflow>
+	<!-- 发送与接收窗口溢出值，0无限制
+		(the value of the send/receive window overflow, 0 is unlimited)
+	-->
+	<windowOverflow>
+		<send>
+			<!-- 一个tick内发送的字节数溢出限制 
+				(A tick, the value of the sent window overflow, 0 is unlimited)
+			-->
+			<tickSentBytes>
+				<internal>	0			</internal>
+				<external>	0			</external>
+			</tickSentBytes>
 			<messages>
-				<internal>	0		</internal>
-				<external>	0		</external>
+				<critical>	1024		</critical>
+				<internal>	65535		</internal>
+				<external>	512		</external>
 			</messages>
 			<bytes>
-				<internal>	0		</internal>
-				<external>	0		</external>
+				<internal>	0			</internal>
+				<external>	1048576	</external>
 			</bytes>
-		</receiveWindowOverflow>
+		</send>
 		
-		<!-- 加密通信，只对外部通道
-			可选加密:
-				0: 无加密
-				1: blowfish
-				2: rsa (res\key\kbengine_private.key)
-		 -->
-		<encrypt_type> 1 </encrypt_type>
-	</channelCommon> 
+		<receive>
+			<messages>
+				<critical>	24			</critical>
+				<internal>	65535		</internal>
+				<external>	32			</external>
+			</messages>
+			<bytes>
+				<internal>	0			</internal>
+				<external>	2048		</external>
+			</bytes>
+		</receive>
+	</windowOverflow>
 	
 	<ip> localhost </ip>
 	<port> 20013 </port>
