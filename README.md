@@ -1,15 +1,15 @@
 kbengine_ogre_demo
 =============
 
-##Homepage:
+## Homepage:
 http://www.kbengine.org
 
-##Releases
+## Releases
 
 	binarys		: https://sourceforge.net/projects/kbengine/files/
 
 
-##Build:
+## Build:
 
 	Linux:
 
@@ -39,7 +39,7 @@ http://www.kbengine.org
 
 
 
-##Start the servers:
+## Start the servers:
 
 	Installation(KBEngine):
 			http://www.kbengine.org/docs/installation.html
@@ -55,12 +55,12 @@ http://www.kbengine.org
 
 
 
-##Configure client:
+## Configure client:
 
 	Change the login address:
 		kbengine_ogre_demo\kbengine\kbe\bin\client\kbengine.xml
 
-##Start the client:
+## Start the client:
 
 	Linux:
 			nonsupport.
