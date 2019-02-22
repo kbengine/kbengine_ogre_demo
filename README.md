@@ -72,6 +72,6 @@ http://www.kbengine.org
 
 
 
-![screenshots1](http://www.kbengine.org/assets/img/screenshots/ogre_demo1.jpg)
-![screenshots2](http://www.kbengine.org/assets/img/screenshots/ogre_demo2.jpg)
-![screenshots3](http://www.kbengine.org/assets/img/screenshots/ogre_demo3.jpg)
+![screenshots1](http://kbengine.github.io/assets/img/screenshots/ogre_demo1.jpg)
+![screenshots2](http://kbengine.github.io/assets/img/screenshots/ogre_demo2.jpg)
+![screenshots3](http://kbengine.github.io/assets/img/screenshots/ogre_demo3.jpg)
